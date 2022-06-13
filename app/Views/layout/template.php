@@ -26,7 +26,7 @@
     <?= $this->renderSection('content'); ?>
 
 
-    <footer class="py-3 mt-2 text-center bg-info">created with &#10084; by <a href="https://www.instagram.com/zka_17_/" class="text-dark fw-bold">Jayanti</a>
+    <footer class="py-3 mt-3 text-center bg-info">created with &#10084; by <a href="https://www.instagram.com/zka_17_/" class="text-dark fw-bold">Jayanti</a>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->

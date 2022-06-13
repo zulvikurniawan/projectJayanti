@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
+<nav class="navbar navbar-expand-lg navbar-light bg-info shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="/home">JAYANTI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,10 +10,10 @@
                     <a class="nav-link active" aria-current="page" href="/Home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Createticket">Create Ticket</a>
+                    <a class="nav-link" href="/Createticket">Create a Ticket</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Ticket">Ticket</a>
+                    <a class="nav-link" href="/Ticket">Tickets</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Admin">admin</a>

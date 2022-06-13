@@ -1,8 +1,8 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
-<div class="container">
-    <div class="row">
+<div class="container bg-light mt-3">
+    <div class="row mx-2">
         <div class="col">
             <h1 class="mt-2">
                 Daftar Account
@@ -41,7 +41,7 @@
                                 </button> -->
 
                                 <!-- tombol tanpa modal -->
-                                <a href="/Admin/<?= $a['nik']; ?>" class="btn btn-sm btn-success">Detail</a>
+                                <a href="/Admin/<?= $a['nama']; ?>" class="btn btn-sm btn-success">Detail</a>
                                 <a href="#" class="btn btn-sm btn-primary">Edit</a>
                                 <a href="#" class="btn btn-sm btn-danger">Delete</a>
                             </td>

@@ -2,3 +2,10 @@
     vertical-align: middle;
 }
 
+body {
+    background-color:#e2e2e2;
+}
+
+.container {
+    border-radius: 10px;
+}

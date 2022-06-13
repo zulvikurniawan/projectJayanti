@@ -14,22 +14,23 @@ class AccountModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = [];
+    protected $allowedFields = ['nik', 'password', 'nama', 'jenis_kelamin', 'tempat_lahir', 'tanggal_lahir', 'email', 'nomor_hp', 'tanggal_bergabung', 'foto_profil'];
 
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
 
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function getAdmin($nik = false)
+    public function getAdmin($nama = false)
     {
-        if ($nik == false) {
+        if ($nama == false) {
             return $this->findAll();
         }
 
-        return $this->where(['nik' => $nik])->first();
+        return $this->where(['nama' => $nama])->first();
     }
 }
