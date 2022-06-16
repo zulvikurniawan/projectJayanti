@@ -8,7 +8,7 @@
             <label class="fw-bold">Describe the incident or request</label>
         </div>
         <div class="col">
-            <label class="fw-bold">(IT Group > PRB)</label>
+            <label class="fw-bold">( IT Group > PRB )</label>
         </div>
     </div>
     <hr>
@@ -45,14 +45,13 @@
             </select>
         </div>
     </div>
-
     <div class="row pb-2">
-        <label for="uergency" class="col-sm-4 col-form-label">inform me about the action taken :</label>
+        <label for="informMeAboutTheActionTaken" class="col-sm-4 col-form-label">inform me about the action taken :</label>
         <div class="col-3">
         </div>
     </div>
     <div class="row pb-2">
-        <label for="uergency" class="col-sm-2 col-form-label">Email Followup</label>
+        <label for="emailFollowup" class="col-sm-2 col-form-label">Email Followup</label>
         <div class="col-3">
             <select class="form-select form-select-sm text-center" aria-label="Default select example">
                 <option selected value="1">Yes</option>
@@ -60,14 +59,19 @@
             </select>
         </div>
     </div>
-    <div class="row pb-2">
-        <label for="uergency" class="col-sm-2 col-form-label">Email </label>
+    <div class="row pb-4">
+        <label for="Email" class="col-sm-2 col-form-label ">Email</label>
         <div class="col-4">
             <input type="text" class="form-control form-control-sm" id="inputPassword">
         </div>
     </div>
     <div class="row pb-2">
-        <label for="uergency" class="col-sm-2 col-form-label">Urgency</label>
+        <label for="informMeAboutTheActionTaken" class="col-sm-4 col-form-label">Assosiated Elements :</label>
+        <div class="col-3">
+        </div>
+    </div>
+    <div class="row pb-2">
+        <label for="myDevices" class="col-sm-2 col-form-label">My Devices</label>
         <div class="col-3">
             <select class="form-select form-select-sm text-center" aria-label="Default select example">
                 <option hidden selected>Medium</option>
@@ -76,7 +80,22 @@
                 <option value="3">Three</option>
             </select>
         </div>
+        <div class="col-1">
+            <button type="submit" class="btn btn-warning btn-sm">Add</button>
+        </div>
     </div>
+    <div class="row pb-2">
+        <label for="location" class="col-sm-2 col-form-label">Location</label>
+        <div class="col-3">
+            <select class="form-select form-select-sm text-center" aria-label="Default select example">
+                <option hidden selected>-----</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </div>
+
 </div>
 
 <?= $this->endSection(); ?>
