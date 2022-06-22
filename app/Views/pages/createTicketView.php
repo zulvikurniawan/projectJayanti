@@ -38,11 +38,11 @@
     <div class="row mb-4">
         <label for="uergency" class="col-sm-4 col-form-label">Urgency</label>
         <div class="col-3">
-            <select class="form-select form-select-sm text-center" aria-label="Default select example">
+            <select class="form-select form-select-sm text-center" aria-label="Default select example" disabled>
                 <option hidden selected>Medium</option>
-                <option value="1">One</option>
+                <!-- <option value="1">One</option>
                 <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="3">Three</option> -->
             </select>
         </div>
     </div>

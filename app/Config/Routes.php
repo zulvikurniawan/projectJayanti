@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'home::index');
 $routes->get('/Admin/(:segment)', 'Admin::detail/$1');
 
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
