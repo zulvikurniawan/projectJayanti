@@ -6,7 +6,9 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="row" colspan="2">Create a Ticket +</th>
+                <th scope="row" colspan="2">
+                    <h4>Create a Ticket +</h4>
+                </th>
             </tr>
             <tr>
                 <th scope="row">Tickets</th>

@@ -15,3 +15,11 @@ padding: 25px;
 .watchers{
     vertical-align: middle;
 }
+
+.cardPengirim{
+    background-color: rgb(197, 197, 197) ;
+}
+
+.cardPenerima{
+    background-color: rgb(222, 255, 213);
+}
