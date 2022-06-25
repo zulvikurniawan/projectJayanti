@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'home::index');
+$routes->get('/', 'CreateTicket::index');
 $routes->get('/Admin/(:segment)', 'Admin::detail/$1');
 
 
