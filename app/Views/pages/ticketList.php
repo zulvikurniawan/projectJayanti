@@ -60,6 +60,23 @@
         </thead>
         <tbody>
 
+            <tr>
+                <td scope="col">ID.</td>
+                <td scope="col">Title</td>
+                <td scope="col">Status</td>
+                <td scope="col">Followups-Date</td>
+                <td scope="col">Opening Date</td>
+                <td scope="col">Last Update</td>
+                <td scope="col">Priority</td>
+                <td scope="col">Plugins-Info-Ext.</td>
+                <td scope="col">Requester-Requester</td>
+                <td scope="col">Assigned To - Technician</td>
+                <td scope="col">Satisfaction Survey - Satisfaction</td>
+                <td scope="col">Plugins Info - Ip Address</td>
+                <td scope="col">Category</td>
+                <td scope="col">Resolution Date</td>
+                <td scope="col">Description</td>
+            </tr>
         </tbody>
         <tfoot class="table-light text-center">
             <tr>

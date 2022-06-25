@@ -79,21 +79,19 @@
                     <label for="" class="fw-bold">Action Historical :</label>
                 </div>
             </div>
-            <div class="row justify-content-end">
-                <div class="col-3"></div>
+            <div class="row">
                 <div class="col">
-                    <div class="card mb-3 cardPengirim" style="max-width: 500px;">
-                        <div class="row g-0 justify-content-between">
+                    <div class="card mb-3 cardPengirim">
+                        <div class="row g-0">
+                            <div class="col-2 ms-4 mt-3">
+                                <img src="/img/fotoProfil.jpg" class="img-fluid " style="max-width: 100px;" alt="">
+                            </div>
                             <div class="col-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Martin Samuel</h5>
-                                    <p class="card-text">Akan diremote, mohon ditunggu.</p>
-                                    <p>thanks,<BR>Martin</BR></p>
+                                    <h5 class="card-title">Trestiani</h5>
+                                    <p class="card-text">Dear Koh Martin, nanti tolong bantuannya untuk install ulang corel draw x6 untuk komputer trestiani ip 10.7.8.87</p>
                                     <p class="card-text"><small class="text-mute">Last updated 10 mins ago</small></p>
                                 </div>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <img src="/img/fotoProfil.jpg" class="img-fluid " style="max-width: 100px;" alt="">
                             </div>
                         </div>
                     </div>
@@ -101,9 +99,9 @@
             </div>
             <div class="row justify-content-end">
                 <div class="col">
-                    <div class="card mb-3 cardPenerima" style="max-width: 550px;">
+                    <div class="card mb-3 cardPenerima">
                         <div class="row g-0">
-                            <div class="col-3 ms-4 mt-3">
+                            <div class="col-2 ms-4 mt-3">
                                 <img src="/img/fotoProfil.jpg" class="img-fluid " style="max-width: 100px;" alt="">
                             </div>
                             <div class="col-8">
@@ -115,6 +113,19 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-2 d-grid me-3">
+                    <button type="submit" class="btn btn-warning">Send<i class="bi bi-send ms-4"></i></button>
                 </div>
             </div>
         </div>
