@@ -62,7 +62,7 @@
 
             <tr>
                 <td scope="col">ID.</td>
-                <td scope="col">Title</td>
+                <td scope="col"></td>
                 <td scope="col">Status</td>
                 <td scope="col">Followups-Date</td>
                 <td scope="col">Opening Date</td>
