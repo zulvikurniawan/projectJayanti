@@ -25,9 +25,19 @@
                                     <td><?= $admin['nik']; ?></td>
                                 </tr>
                                 <tr>
-                                    <td>Jabatan</td>
+                                    <td>Departement</td>
                                     <td>: </td>
-                                    <td></td>
+                                    <td>Dummy</td>
+                                </tr>
+                                <tr>
+                                    <td>Division</td>
+                                    <td>: </td>
+                                    <td>Dummy</td>
+                                </tr>
+                                <tr>
+                                    <td>Leader</td>
+                                    <td>: </td>
+                                    <td>Dummy</td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
@@ -57,7 +67,7 @@
                                 <tr>
                                     <td>No. HP</td>
                                     <td>: </td>
-                                    <td>0<?= $admin['nomor_hp']; ?></td>
+                                    <td><?= $admin['nomor_hp']; ?></td>
                                 </tr>
                                 <tr>
                                     <td>Tanggal Bergabung</td>

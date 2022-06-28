@@ -38,7 +38,7 @@
         <div class="row mb-4">
             <label for="uergency" class="col-sm-4 col-form-label">Urgency</label>
             <div class="col-3">
-                <select class="form-select form-select-sm text-center" aria-label="Default select example">
+                <select class="form-select form-select-sm text-center" aria-label="Default select example" disabled>
                     <option hidden selected>Medium</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -49,7 +49,8 @@
         <hr>
 
         <div class="row mb-2">
-            <label for="informMeAboutTheActionTaken" class="col-sm-4 col-form-label">inform me about the action taken :</label>
+            <label for="informMeAboutTheActionTaken" class="col-sm-4 col-form-label">inform me about the action taken
+                :</label>
             <div class="col-3">
             </div>
         </div>
@@ -79,7 +80,7 @@
             <label for="myDevices" class="col-sm-4 col-form-label">My Devices</label>
             <div class="col-3">
                 <select class="form-select form-select-sm text-center" aria-label="Default select example">
-                    <option hidden selected>Medium</option>
+                    <option hidden selected>-----</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
@@ -143,7 +144,8 @@
             <label for="Email" class="col-sm-4 col-form-label ">Description</label>
             <div class="col-5">
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 300px"></textarea>
                 </div>
             </div>
         </div>
