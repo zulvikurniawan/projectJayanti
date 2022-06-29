@@ -13,7 +13,7 @@
             <!-- <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#addAccountModal">
                 Add Account</button> -->
 
-            <a href="/admin/addAccount" class="btn btn-info">Add Account</a>
+            <a href="/admin/accountAdd" class="btn btn-info">Add Account</a>
 
             <table class="table tableAdmin mt-2">
                 <thead>

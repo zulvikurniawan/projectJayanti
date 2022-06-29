@@ -22,11 +22,17 @@
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="text" class="form-control" id="password" name="password" placeholder="Input Password" value="<?= old('password'); ?>">
+                    <input type="text" class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" name="password" placeholder="Input ID" autofocus value="<?= old('password'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('password'); ?>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Input Nama" value="<?= old('nama'); ?>">
+                    <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Input ID" autofocus value="<?= old('nama'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('nama'); ?>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
@@ -45,23 +51,38 @@
                 </div>
                 <div class="mb-3">
                     <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
-                    <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Input Tempat Lahir" value="<?= old('tempat_lahir'); ?>">
+                    <input type="text" class="form-control <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : ''; ?>" id="tempat_lahir" name="tempat_lahir" placeholder="Input Tempat Lahir" value="<?= old('tempat_lahir'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('tempat_lahir'); ?>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                    <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" placeholder="Input Tanggal Lahir" value="<?= old('tanggal_lahir'); ?>">
+                    <input type="date" class="form-control <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : ''; ?>" id="tanggal_lahir" name="tanggal_lahir" placeholder="Input Tanggal Lahir" value="<?= old('tanggal_lahir'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('tanggal_lahir'); ?>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Input Email" value="<?= old('email'); ?>">
+                    <input type="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" id="email" name="email" placeholder="Input Email" value="<?= old('email'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('email'); ?>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="nomor_hp" class="form-label">Nomor Hp</label>
-                    <input type="text" class="form-control" id="nomor_hp" name="nomor_hp" placeholder="Input nomor Hp" value="<?= old('nomor_hp'); ?>">
+                    <input type="text" class="form-control <?= ($validation->hasError('nomor_hp')) ? 'is-invalid' : ''; ?>" id="nomor_hp" name="nomor_hp" placeholder="Input nomor Hp" value="<?= old('nomor_hp'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('nomor_hp'); ?>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="tanggal_bergabung" class="form-label">Tanggal Bergabung</label>
-                    <input type="date" class="form-control" id="tanggal_bergabung" name="tanggal_bergabung" placeholder="Input Tanggal Bergabung" value="<?= old('tanggal_bergabung'); ?>">
+                    <input type="date" class="form-control <?= ($validation->hasError('tanggal_bergabung')) ? 'is-invalid' : ''; ?>" id="tanggal_bergabung" name="tanggal_bergabung" placeholder="Input Tanggal Bergabung" value="<?= old('tanggal_bergabung'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('tanggal_bergabung'); ?>
+                    </div>
                 </div>
             </div>
         </div>

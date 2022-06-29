@@ -1,0 +1,26 @@
+CRITICAL - 2022-06-29 13:20:28 --> Invalid file: pages/addAccountView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/addAccoun...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/addAccoun...', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(51): view('pages/addAccoun...', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->addAccount()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-06-29 13:22:55 --> syntax error, unexpected ''password'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin/save')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin/save')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-29 13:23:51 --> syntax error, unexpected ''password'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin/save')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin/save')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}

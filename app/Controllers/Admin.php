@@ -40,7 +40,7 @@ class Admin extends BaseController
         return view('pages/detailAccountView', $data);
     }
 
-    public function addAccount()
+    public function accountAdd()
     {
 
         $data = [
@@ -48,7 +48,7 @@ class Admin extends BaseController
             'validation' => \config\Services::validation()
         ];
 
-        return view('pages/addAccountView', $data);
+        return view('pages/accountAdd', $data);
     }
 
     public function save()
@@ -61,10 +61,68 @@ class Admin extends BaseController
                     'required' => 'ID harus diisi.',
                     'is_unique' => 'ID sudah terdaftar.'
                 ]
+            ],
+
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Password harus diisi.'
+                ]
+            ],
+
+            'nama' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama harus diisi.',
+                ]
+            ],
+
+            // validasi jenis kelamin belum bisa
+            // 'jenis_kelamin' => [
+            //     'rules' => 'required',
+            //     'errors' => [
+            //         'required' => 'Jenis Kelamin harus diisi.',
+            //     ]
+            // ],
+
+            'tempat_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tempat lahir harus diisi.',
+                ]
+            ],
+
+            'tanggal_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tanggal lahir harus diisi.',
+                ]
+            ],
+
+            'email' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Email harus diisi.',
+                ]
+            ],
+
+            'nomor_hp' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nomor hp harus diisi.',
+                ]
+            ],
+
+            'tanggal_bergabung' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tanggal bergabung harus diisi.',
+                ]
             ]
+
         ])) {
             $validation = \config\Services::validation();
-            return redirect()->to('/admin/addAccount')->withInput()->with('validation', $validation);
+            return redirect()->to('/admin/accountAdd')->withInput()->with('validation', $validation);
         }
 
         $this->AccountModel->save([

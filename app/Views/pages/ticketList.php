@@ -61,7 +61,7 @@
         <tbody>
 
             <tr>
-<<<<<<< HEAD
+
                 <td scope="col">ID.</td>
                 <td scope="col"></td>
                 <td scope="col">Status</td>
@@ -77,23 +77,7 @@
                 <td scope="col">Category</td>
                 <td scope="col">Resolution Date</td>
                 <td scope="col">Description</td>
-=======
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
-                <td scope="col">Dummy</td>
->>>>>>> 38aa5740fa1ba7586aaddb73a61a583252ad6082
+
             </tr>
         </tbody>
         <tfoot class="table-light text-center">
