@@ -7,42 +7,46 @@
         <thead>
             <tr>
                 <th scope="row" colspan="2">
-                    <h4>Create a Ticket +</h4>
+                    <h4>Status Ticket</h4>
                 </th>
             </tr>
             <tr>
                 <th scope="row">Tickets</th>
-                <th scope="row" style="text-align: right;">Number</th>
+                <th scope="row" class="text-end">Number</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td scope="row"><a href="/Ticket/list">New</a></td>
-                <td scope="row" style="text-align: right;">0</td>
+                <td scope="row"><a href="/Ticket/list" style="text-decoration:none">New</a></td>
+                <td scope="row" class="text-end">0</td>
             </tr>
             <tr>
-                <td scope="row"><a href="">Processing (Assigned)</a></td>
-                <td scope="row" style="text-align: right;">0</td>
+                <td scope="row"><a href="" style="text-decoration:none">Approval (Leader User)</a></td>
+                <td scope="row" class="text-end">0</td>
             </tr>
             <tr>
-                <td scope="row"><a href="">Processing (Planned)</a></td>
-                <td scope="row" style="text-align: right;">0</td>
+                <td scope="row"><a href="" style="text-decoration:none">Approval (IT Admin)</a></td>
+                <td scope="row" class="text-end">0</td>
             </tr>
             <tr>
-                <td scope="row"><a href="">Pendding</a></td>
-                <td scope="row" style="text-align: right;">0</td>
+                <td scope="row"><a href="" style="text-decoration:none">Pendding</a></td>
+                <td scope="row" class="text-end">0</td>
             </tr>
             <tr>
-                <td scope="row"><a href="">Solved</a></td>
-                <td scope="row" style="text-align: right;">0</td>
+                <td scope="row"><a href="" style="text-decoration:none">Solved</a></td>
+                <td scope="row" class="text-end">0</td>
             </tr>
             <tr>
-                <td scope="row"><a href="">Closed</a></td>
-                <td scope="row" style="text-align: right;">0</td>
+                <td scope="row"><a href="" style="text-decoration:none">Closed</a></td>
+                <td scope="row" class="text-end">1</td>
             </tr>
             <tr>
-                <td scope="row"><a href="">Deleted</a></td>
-                <td scope="row" style="text-align: right;">0</td>
+                <td scope="row"><a href="" style="text-decoration:none">Deleted</a></td>
+                <td scope="row" class="text-end">0</td>
+            </tr>
+            <tr>
+                <td scope="row"><a href="" style="text-decoration:none">History</a></td>
+                <td scope="row" class="text-end">1</td>
             </tr>
 
         </tbody>

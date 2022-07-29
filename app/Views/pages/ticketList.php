@@ -1,111 +1,202 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
+
 <div class="container bg-white mt-3 shadow">
-    <form action="" method="post">
-        <table class="table table-sm">
-            <tbody>
-                <tr>
-                    <th scope="row">Status</th>
-                    <td>:</td>
-                    <td>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Default</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Priority</th>
-                    <td>:</td>
-                    <td>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Default</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Category</th>
-                    <td>:</td>
-                    <td>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Default</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <button type="button" class="btn btn-primary">Search</button>
-    </form>
+    <div class="row">
+        <div class="col text-center">
+            <h3>Ticket List</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-2">
+            <h5 class="mb-3">Status</h5>
+            <h5 class="mb-3">Priority</h5>
+            <h5 class=>Category</h5>
+        </div>
+        <div class="col-3">
+            <select class="form-select form-select-sm mb-2" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select form-select-sm mb-2" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select form-select-sm" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3" style="margin-left:203px;">
+        <div class="col">
+            <a class="btn btn-sm btn-primary" href="#">Submit</a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col scrollTable" style="overflow-x: auto">
+            <table id="tableTicketList" class="table table-striped table-hover" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="text-nowrap">ID.</th>
+                        <th class="text-nowrap">Date</th>
+                        <th class="text-nowrap">Status</th>
+                        <th class="text-nowrap">Priority</th>
+                        <th class="text-nowrap">Category</th>
+                        <th class="text-nowrap">Title</th>
+                        <th class="text-nowrap">action</th>
+
+                        <!-- detail ticket -->
+                        <!-- <th class="text-nowrap">Opening Date</th>
+                        <th class="text-nowrap">Last Update</th>
+                        <th class="text-nowrap">Plugins-Info-Ext.</th>
+                        <th class="text-nowrap">Requester-Requester</th>
+                        <th class="text-nowrap">Assigned To - Technician</th>
+                        <th class="text-nowrap">Satisfaction Survey - Satisfaction</th>
+                        <th class="text-nowrap">Plugins Info - Ip Address</th>
+                        <th class="text-nowrap">Resolution Date</th>
+                        <th class="text-nowrap">Description</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>170494</td>
+                        <td>30/07/2022</td>
+                        <td>New</td>
+                        <td>Medium</td>
+                        <td>Network Problem</td>
+                        <td>Connetction fail</td>
+                        <td><a href="#" class="btn btn-sm btn-warning">Detail</a></td>
+                        <!-- <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td>
+                        <td>dummy</td> -->
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th class="text-nowrap">ID.</th>
+                        <th class="text-nowrap">Date</th>
+                        <th class="text-nowrap">Status</th>
+                        <th class="text-nowrap">Priority</th>
+                        <th class="text-nowrap">Category</th>
+                        <th class="text-nowrap">Title</th>
+                        <th class="text-nowrap">action</th>
+                        <!-- <th>Opening Date</th>
+                        <th>Last Update</th>
+                        <th>Plugins-Info-Ext.</th>
+                        <th>Requester-Requester</th>
+                        <th>Assigned To - Technician</th>
+                        <th>Satisfaction Survey - Satisfaction</th>
+                        <th>Plugins Info - Ip Address</th>
+                        <th>Resolution Date</th>
+                        <th>Description</th> -->
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
 </div>
-<div class="container-fluid bg-white mt-3 shadow">
-    <table class="table table-bordered tableAdmin ">
-        <thead class="table-light text-center">
-            <tr>
-                <th scope="col">ID.</th>
-                <th scope="col">Title</th>
-                <th scope="col">Status</th>
-                <th scope="col">Followups-Date</th>
-                <th scope="col">Opening Date</th>
-                <th scope="col">Last Update</th>
-                <th scope="col">Priority</th>
-                <th scope="col">Plugins-Info-Ext.</th>
-                <th scope="col">Requester-Requester</th>
-                <th scope="col">Assigned To - Technician</th>
-                <th scope="col">Satisfaction Survey - Satisfaction</th>
-                <th scope="col">Plugins Info - Ip Address</th>
-                <th scope="col">Category</th>
-                <th scope="col">Resolution Date</th>
-                <th scope="col">Description</th>
-            </tr>
-        </thead>
-        <tbody>
 
-            <tr>
 
-                <td scope="col">ID.</td>
-                <td scope="col"></td>
-                <td scope="col">Status</td>
-                <td scope="col">Followups-Date</td>
-                <td scope="col">Opening Date</td>
-                <td scope="col">Last Update</td>
-                <td scope="col">Priority</td>
-                <td scope="col">Plugins-Info-Ext.</td>
-                <td scope="col">Requester-Requester</td>
-                <td scope="col">Assigned To - Technician</td>
-                <td scope="col">Satisfaction Survey - Satisfaction</td>
-                <td scope="col">Plugins Info - Ip Address</td>
-                <td scope="col">Category</td>
-                <td scope="col">Resolution Date</td>
-                <td scope="col">Description</td>
-
-            </tr>
-        </tbody>
-        <tfoot class="table-light text-center">
-            <tr>
-                <th scope="col">ID.</th>
-                <th scope="col">Title</th>
-                <th scope="col">Status</th>
-                <th scope="col">Followups-Date</th>
-                <th scope="col">Opening Date</th>
-                <th scope="col">Last Update</th>
-                <th scope="col">Priority</th>
-                <th scope="col">Plugins-Info-Ext.</th>
-                <th scope="col">Requester-Requester</th>
-                <th scope="col">Assigned To - Technician</th>
-                <th scope="col">Satisfaction Survey - Satisfaction</th>
-                <th scope="col">Plugins Info - Ip Address</th>
-                <th scope="col">Category</th>
-                <th scope="col">Resolution Date</th>
-                <th scope="col">Description</th>
-            </tr>
-        </tfoot>
-    </table>
-</div>
 
 <?= $this->endSection(); ?>
 
 //java skript
 <?= $this->section('javascript'); ?>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#tableTicketList').DataTable({
+            lengthChange: false,
+        });
+    });
+</script>
+
+
+
+<!-- filter datatable -->
+<!-- <script>
+    $(document).ready(function() {
+        // Setup - add a text input to each footer cell
+        $('#tableTicketList thead tr')
+            .clone(true)
+            .addClass('filters')
+            .appendTo('#tableTicketList thead');
+
+        var table = $('#tableTicketList').DataTable({
+            orderCellsTop: true,
+            fixedHeader: true,
+            initComplete: function() {
+                var api = this.api();
+
+                // For each column
+                api
+                    .columns()
+                    .eq(0)
+                    .each(function(colIdx) {
+                        // Set the header cell to contain the input element
+                        var cell = $('.filters th').eq(
+                            $(api.column(colIdx).header()).index()
+                        );
+                        var title = $(cell).text();
+                        $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                        // On every keypress in this input
+                        $(
+                                'input',
+                                $('.filters th').eq($(api.column(colIdx).header()).index())
+                            )
+                            .off('keyup change')
+                            .on('change', function(e) {
+                                // Get the search value
+                                $(this).attr('title', $(this).val());
+                                var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                                var cursorPosition = this.selectionStart;
+                                // Search the column for that value
+                                api
+                                    .column(colIdx)
+                                    .search(
+                                        this.value != '' ?
+                                        regexr.replace('{search}', '(((' + this.value + ')))') :
+                                        '',
+                                        this.value != '',
+                                        this.value == ''
+                                    )
+                                    .draw();
+                            })
+                            .on('keyup', function(e) {
+                                e.stopPropagation();
+
+                                $(this).trigger('change');
+                                $(this)
+                                    .focus()[0]
+                                    .setSelectionRange(cursorPosition, cursorPosition);
+                            });
+                    });
+            },
+        });
+    });
+</script> -->
+
 
 <?= $this->endSection(); ?>
 // akhir java skript

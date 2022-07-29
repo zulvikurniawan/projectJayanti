@@ -1,26 +1,58 @@
-.tableAdmin > tbody > tr > * {
-    vertical-align: middle;
+body{
+    background-color:blanchedalmond;
 }
-
-body {
-    background-color:rgb(253, 253, 236);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.container {
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
     margin-bottom: 5rem;
 }
 
-.container {
-    border-radius: 10px;
-padding: 25px;
+
+/* login */
+.containerlogin{
+    left: 10%;
+    right: 10%;
+top: 30%;
+position: absolute;
+margin: auto;
+max-width: 37rem;
 }
 
-.watchers{
+.btnLogin{
+    background-color: #adb5bd;
+}
+
+/* home */
+.about{
+    background-color: rgba(43, 36, 36, 0.801);  
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+    position: absolute;
+    bottom: 600px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 0;
+}
+
+/* admin */
+.tableAdmin > tbody > tr > * {
     vertical-align: middle;
 }
-
-.cardPengirim{
-    background-color: rgb(197, 197, 197) ;
+.cardAkun {
+    border-radius: 10px;
+    padding: 25px;
 }
 
+/* ticket */
+
+
+/* chat */
+.cardPengirim{
+    background-color: #adb5bd;
+}
 .cardPenerima{
-    background-color: rgb(222, 255, 213);
+    background-color: #97caaa;
 }

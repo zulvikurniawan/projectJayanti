@@ -23,12 +23,30 @@ class Ticket extends BaseController
         return view('pages/ticketList', $data);
     }
 
-    public function Detail()
+    public function detail()
     {
         $data = [
             'title' => 'Ticket Detail | Jayanti Program'
         ];
 
         return view('pages/ticketDetail', $data);
+    }
+
+    public function history()
+    {
+        $data = [
+            'title' => 'Ticket History | Jayanti Program'
+        ];
+
+        return view('pages/ticketHistory', $data);
+    }
+
+    public function report()
+    {
+        $data = [
+            'title' => 'Report | Jayanti Program'
+        ];
+
+        return view('pages/ticketReport', $data);
     }
 }

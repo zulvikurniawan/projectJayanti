@@ -1,0 +1,8 @@
+CRITICAL - 2022-07-26 11:27:29 --> Use of undefined constant ogin - assumed 'ogin' (this will throw an Error in a future version of PHP)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Login.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\Users\\XIANGL...', 10, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}

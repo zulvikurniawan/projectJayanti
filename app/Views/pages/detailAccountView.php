@@ -5,8 +5,13 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-10">
-            <h2 class="my-3 text-center">Detail Account</h2>
-            <div class="card">
+            <div class="card cardAkun">
+                <div class="row">
+                    <div class="col text-center mt-2">
+                        <h2>Detail Account</h2>
+                        <hr>
+                    </div>
+                </div>
                 <div class="row g-0">
                     <div class="col-md-4 my-auto">
                         <img src="/img/<?= $admin['foto_profil']; ?>" class="img-fluid rounded-start" alt="...">
