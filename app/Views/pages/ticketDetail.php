@@ -2,78 +2,126 @@
 
 <?= $this->section('content'); ?>
 <div class="container bg-white mt-3 shadow">
-    <div class="row">
-        <div class="col-1">
-            <i class="bi bi-card-list"></i>
+    <div class="row pb-2 border-bottom border-2 border-dark mb-3">
+        <div class="col-4">
+            <label class="fw-bold">Describe the incident or request</label>
         </div>
-        <div class="col-10 text-center fw-bold"><i class="bi bi-circle-fill"></i>
-            Install ulang corel draw x6 (IT Group > PRB )
+        <div class="col-6">
+            <label class="fw-bold">( IT Group > PRB )</label>
         </div>
-        <div class="col-1">1/1</div>
+    </div>
+    <div class="row mb-2">
+        <label for="idTicket" class="col-sm-4 col-form-label">ID Ticket</label>
+        <div class="col-3">
+            <label for="idTicket" class="col-sm-4 col-form-label"><?= $ticket['id_ticket']; ?></label>
+            </select>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <label for="type" class="col-sm-4 col-form-label">Type</label>
+        <div class="col-3">
+            <label for="type" class="col-sm-4 col-form-label"><?= $ticket['type']; ?></label>
+            </select>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <label for="category" class="col-sm-4 col-form-label">Category</label>
+        <div class="col">
+            <label for="category" class="col-sm-4 col-form-label"><?= $ticket['category']; ?></label>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <label for="uergency" class="col-sm-4 col-form-label">Urgency</label>
+        <div class="col">
+            <label for="uergency" class="col-sm-4 col-form-label"><?= $ticket['urgency']; ?></label>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <label for="priority" class="col-sm-4 col-form-label">Priority</label>
+        <div class="col">
+            <label for="priority" class="col-sm-4 col-form-label"><?= $ticket['priority']; ?></label>
+        </div>
     </div>
     <hr>
 
-    <div class="row">
+    <div class="row mb-2">
+        <label for="informMeAboutTheActionTaken" class="col-sm-4 col-form-label">inform me about the action taken
+            :</label>
+    </div>
+    <div class="row mb-2">
+        <label for="emailFollowup" class="col-sm-4 col-form-label">Email Followup</label>
         <div class="col">
-            <div class="row pe-3 mb-3">
-                <div class="col border-bottom">
-                    <label for="" class="fw-bold">Action Historical :</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-8">
-                    <div class="card mb-3 cardPengirim">
-                        <div class="row g-0">
-                            <div class="col ">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dummy</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                                        dolorem necessitatibus tenetur unde iusto adipisci nesciunt consequatur, officia
-                                        error harum ipsum omnis accusantium neque maiores tempore, dolores, illum nihil?
-                                        Cupiditate.</p>
-                                    <p class="card-text"><small class="text-mute">Last updated 10 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-8">
-                    <div class="card mb-3 cardPenerima">
-                        <div class="row g-0">
-                            <div class="col ">
-                                <div class="card-body">
-                                    <h5 class="card-title">Fikana</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                                        dolorem necessitatibus tenetur unde iusto adipisci nesciunt consequatur, officia
-                                        error harum ipsum omnis accusantium neque maiores tempore, dolores, illum nihil?
-                                        Cupiditate.</p>
-                                    <p class="card-text"><small class="text-mute">Last updated 10 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <label for="Email" class="col-sm-4 col-form-label"><?= $ticket['email_followup']; ?></label>
+        </div>
+    </div>
+    <hr>
 
-            <div class="row mb-3">
-                <div class="col">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
-                        <label for="floatingTextarea2">Message</label>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-2 d-grid me-3">
-                    <button type="submit" class="btn btn-warning">Send<i class="bi bi-send ms-4"></i></button>
-                </div>
+    <div class="row mb-2">
+        <label for="assosiatedElements" class="col-sm-4 col-form-label">Assosiated Elements :</label>
+        <div class="col">
+        </div>
+    </div>
+    <div class="row mb-2">
+        <label for="myDevices" class="col-sm-4 col-form-label">My Devices</label>
+        <div class="col">
+            <label for="myDevices" class="col-sm-4 col-form-label"><?= $ticket['my_device']; ?></label>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <label for="location" class="col-sm-4 col-form-label">Location</label>
+        <div class="col">
+            <label for="location" class="col-sm-4 col-form-label"><?= $ticket['location']; ?></label>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row mb-2">
+        <label for="watcher" class="col-sm-4 col-form-label">Watcher :</label>
+    </div>
+    <div class="row mb-4">
+        <label for="Email" class="col-sm-4 col-form-label">Email Followup</label>
+        <div class="col">
+            <label for="Email" class="col-sm-4 col-form-label "><?= $ticket['email_watcher']; ?></label>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row mb-4">
+        <label for="Email" class="col-sm-4 col-form-label ">Title</label>
+        <div class="col">
+            <label for="Email" class="col-sm-4 col-form-label "><?= $ticket['title']; ?></label>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <label for="Email" class="col-sm-4 col-form-label ">Description</label>
+        <div class="col">
+            <label for="Email" class="col-sm-4 col-form-label "><?= $ticket['description']; ?></label>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-4"></div>
+        <div class="col-5">
+            <div class="mb-3">
+                <input class="form-control" type="file" id="formFile" hidden>
             </div>
         </div>
     </div>
+    <div class="row mb-4">
+        <label for="Email" class="col-sm-2 col-form-label fw-bold text-end">IP Addres</label>
+        <div class="col-sm-2">
+            <label for="Email" class="col-sm-2 col-form-label fw-bold text-end"><?= $ticket['ip']; ?></label>
+        </div>
+        <label for="Email" class="col-sm-2 col-form-label fw-bold text-end">Ext.</label>
+        <div class="col">
+            <label for="Email" class="col-sm-2 col-form-label fw-bold text-end"><?= $ticket['ext']; ?></label>
+        </div>
+    </div>
+    <div class="row mb-4 text-end me-5">
+        <div class="col">
+            <a href="/Ticket/list" type="button" class="btn btn-secondary">Back</a>
+        </div>
+    </div>
 </div>
-
 <?= $this->endSection(); ?>
 
 //java skript

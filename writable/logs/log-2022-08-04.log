@@ -1,0 +1,118 @@
+CRITICAL - 2022-08-04 05:36:11 --> Call to undefined method App\Models\TicketModel::getAdmin
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(64): CodeIgniter\Model->__call('getAdmin', Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-04 05:36:24 --> Undefined variable: ticket
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketDetail.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 5, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(67): view('pages/ticketDet...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-04 05:36:54 --> Illegal string offset 'ticket'
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketDetail.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\XIANGL...', 19, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(67): view('pages/ticketDet...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-04 05:37:09 --> Illegal string offset 'type'
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketDetail.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\XIANGL...', 19, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(67): view('pages/ticketDet...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-04 05:37:39 --> Illegal string offset 'type'
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketDetail.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\XIANGL...', 19, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(67): view('pages/ticketDet...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-04 05:37:43 --> Too few arguments to function App\Controllers\Ticket::detail(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-04 05:37:43 --> Too few arguments to function App\Controllers\Ticket::detail(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-04 05:37:46 --> Illegal string offset 'type'
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketDetail.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\XIANGL...', 19, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(67): view('pages/ticketDet...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-04 05:37:50 --> Illegal string offset 'type'
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketDetail.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\XIANGL...', 19, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(67): view('pages/ticketDet...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-04 06:01:24 --> Undefined index: Priority
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketDetail.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 35, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(67): view('pages/ticketDet...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail('9')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-04 08:37:22 --> Undefined variable: ticket
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketApproval.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 71, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketApp...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(93): view('pages/ticketApp...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->approval()
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}

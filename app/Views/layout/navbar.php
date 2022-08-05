@@ -10,13 +10,13 @@
                     <a class="nav-link" aria-current="page" href="/Home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Createticket">Create Ticket</a>
+                    <a class="nav-link" href="/ticket/create">Create Ticket</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Ticket">Status Ticket</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Admin">User</a>
+                    <a class="nav-link" href="/Admin">Admin</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

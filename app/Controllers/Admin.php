@@ -2,25 +2,17 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\Request;
+
 // jika memakai contsruct
 // use App\Models\AccountModel;
 
 class Admin extends BaseController
 {
     protected $AccountModel;
-    // jika memaki contstruct
-
-    // public function __construct()
-    // {
-    // $this->AccountModel = new AccountModel();
-    // }
 
     public function index()
     {
-        // tidak memakai construct
-        // namespace berada dalam BaseController
-        // $account = $this->AccountModel->findAll();
-
         $data = [
             'title' => 'Admin | Jayanti Program',
             'account' => $this->AccountModel->getAdmin()
@@ -30,11 +22,11 @@ class Admin extends BaseController
     }
 
 
-    public function detail($nama)
+    public function detail($id_account)
     {
         $data = [
             'title' => 'Detail Account | Jayanti Program',
-            'admin' => $this->AccountModel->getAdmin($nama)
+            'admin' => $this->AccountModel->getAdmin($id_account)
         ];
 
         return view('pages/detailAccountView', $data);
@@ -42,7 +34,6 @@ class Admin extends BaseController
 
     public function accountAdd()
     {
-
         $data = [
             'title' => 'Add Account | Jayanti Program',
             'validation' => \config\Services::validation()
@@ -56,17 +47,12 @@ class Admin extends BaseController
         //validasi create account
         if (!$this->validate([
             'nik' => [
-                'rules' => 'required|is_unique[account.nik]',
+                'rules' => 'required|is_unique[account.nik]|max_length[10]|min_length[10]',
                 'errors' => [
                     'required' => 'ID harus diisi.',
-                    'is_unique' => 'ID sudah terdaftar.'
-                ]
-            ],
-
-            'password' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Password harus diisi.'
+                    'is_unique' => 'ID sudah terdaftar.',
+                    'max_length' => 'ID Tidak Sesuai',
+                    'min_length' => 'ID Tidak sesuai'
                 ]
             ],
 
@@ -74,6 +60,13 @@ class Admin extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Nama harus diisi.',
+                ]
+            ],
+
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Password harus diisi.'
                 ]
             ],
 
@@ -127,8 +120,8 @@ class Admin extends BaseController
 
         $this->AccountModel->save([
             'nik' => $this->request->getVar('nik'),
-            'password' => $this->request->getVar('password'),
             'nama' => $this->request->getVar('nama'),
+            'password' => $this->request->getVar('password'),
             'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
             'tempat_lahir' => $this->request->getVar('tempat_lahir'),
             'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
@@ -138,7 +131,63 @@ class Admin extends BaseController
             'foto_profil' => $this->request->getVar('foto_profil')
         ]);
 
+        session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');
+        return redirect()->to('/Admin');
+    }
 
-        return redirect()->to('/admin');
+    public function delete($id_account)
+    {
+        $this->AccountModel->delete($id_account);
+        session()->setFlashdata('hapusData', 'Data berhasil dihapus.');
+        return redirect()->to('/Admin');
+    }
+
+    //method untuk form edit
+    public function edit($id_account)
+    {
+        $data = [
+            'title' => 'Edit Account | Jayanti Program',
+            'validation' => \config\Services::validation(),
+            'admin' => $this->AccountModel->getAdmin($id_account)
+        ];
+
+        return view('pages/accountEdit', $data);
+    }
+
+    //method untuk function update
+    public function update($id_account)
+    {
+        //cek data yang dikirim
+        // dd($this->request->getVar());
+
+        if (!$this->validate([
+
+            'nama' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama harus diisi.',
+                ]
+            ]
+
+        ])) {
+            $validation = \config\Services::validation();
+            return redirect()->to('/admin/edit/' . $this->request->getVar('id_account'))->withInput()->with('validation', $validation);
+        }
+
+        $this->AccountModel->save([
+            'id_account' => $id_account,
+            'nama' => $this->request->getVar('nama'),
+            'password' => $this->request->getVar('password'),
+            'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
+            'tempat_lahir' => $this->request->getVar('tempat_lahir'),
+            'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
+            'email' => $this->request->getVar('email'),
+            'nomor_hp' => $this->request->getVar('nomor_hp'),
+            'tanggal_bergabung' => $this->request->getVar('tanggal_bergabung'),
+            'foto_profil' => $this->request->getVar('foto_profil')
+        ]);
+
+        session()->setFlashdata('tambahData', 'Data berhasil ubah.');
+        return redirect()->to('/Admin');
     }
 }

@@ -1,0 +1,10 @@
+CRITICAL - 2022-07-29 15:02:11 --> Invalid file: pages/ticketDetail.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/ticketDet...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketDet...', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Ticket.php(32): view('pages/ticketDet...', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detail()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}

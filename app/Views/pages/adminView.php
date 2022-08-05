@@ -9,6 +9,19 @@
             </h1>
             <hr>
 
+            <?php if (session()->getFlashdata('tambahData')) : ?>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('tambahData'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
+            <?php if (session()->getFlashdata('hapusData')) : ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('hapusData'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
+
             <!-- tombol jika menggunakan modal -->
             <!-- <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#addAccountModal">
                 Add Account</button> -->
@@ -41,9 +54,9 @@
                                 </button> -->
 
                                 <!-- tombol tanpa modal -->
-                                <a href="/Admin/<?= $a['nama']; ?>" class="btn btn-sm btn-success">Detail</a>
-                                <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                                <a href="/Admin/<?= $a['id_account']; ?>" class="btn btn-sm btn-success">Detail</a>
+                                <a href="/Admin/edit/<?= $a['id_account']; ?>" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="/Admin/delete/<?= $a['id_account']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin?');">Delete</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

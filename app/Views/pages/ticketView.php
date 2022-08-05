@@ -21,11 +21,7 @@
                 <td scope="row" class="text-end">0</td>
             </tr>
             <tr>
-                <td scope="row"><a href="" style="text-decoration:none">Approval (Leader User)</a></td>
-                <td scope="row" class="text-end">0</td>
-            </tr>
-            <tr>
-                <td scope="row"><a href="" style="text-decoration:none">Approval (IT Admin)</a></td>
+                <td scope="row"><a href="" style="text-decoration:none">Approval</a></td>
                 <td scope="row" class="text-end">0</td>
             </tr>
             <tr>

@@ -7,6 +7,18 @@
         <div class="col text-center">
             <h3>Ticket List</h3>
             <hr>
+            <?php if (session()->getFlashdata('tambahData')) : ?>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('tambahData'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
+            <?php if (session()->getFlashdata('hapusData')) : ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('hapusData'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
     <div class="row mb-2">
@@ -68,15 +80,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>170494</td>
-                        <td>30/07/2022</td>
-                        <td>New</td>
-                        <td>Medium</td>
-                        <td>Network Problem</td>
-                        <td>Connetction fail</td>
-                        <td><a href="#" class="btn btn-sm btn-warning">Detail</a></td>
-                        <!-- <td>dummy</td>
+                    <?php foreach ($ticket as $t) : ?>
+                        <tr>
+                            <td><?= $t['id_ticket']; ?></td>
+                            <td><?= $t['created_at']; ?></td>
+                            <td><?= $t['status']; ?></td>
+                            <td><?= $t['priority']; ?></td>
+                            <td><?= $t['category']; ?></td>
+                            <td><?= $t['title']; ?></td>
+                            <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>" class="btn btn-sm btn-warning">Detail</a></td>
+                            <!-- <td>dummy</td>
                         <td>dummy</td>
                         <td>dummy</td>
                         <td>dummy</td>
@@ -85,7 +98,8 @@
                         <td>dummy</td>
                         <td>dummy</td>
                         <td>dummy</td> -->
-                    </tr>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
                 <tfoot>
                     <tr>

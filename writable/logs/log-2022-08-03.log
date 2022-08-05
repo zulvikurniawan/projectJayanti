@@ -1,0 +1,865 @@
+CRITICAL - 2022-08-03 05:08:57 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\detailAccountView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(30): view('pages/detailAcc...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('edit', '51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:12:13 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:12:19 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:12:44 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:16:09 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:16:57 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:18:08 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:18:18 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 18, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:20:10 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:21:01 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\detailAccountView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(30): view('pages/detailAcc...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('edit', '51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:21:17 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\detailAccountView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(30): view('pages/detailAcc...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('edit', '51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 05:23:21 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\detailAccountView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(30): view('pages/detailAcc...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('aslam')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:02:45 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:03:07 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:03:37 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:03:42 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:03:48 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(152): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('57')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:03:49 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:03:50 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:03:51 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:05:49 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\detailAccountView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(30): view('pages/detailAcc...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('edit')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:06:20 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\detailAccountView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(30): view('pages/detailAcc...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('edit')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:06:43 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\detailAccountView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(30): view('pages/detailAcc...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('edit')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:14:35 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+ERROR - 2022-08-03 08:16:03 --> Column 'nik' cannot be null
+CRITICAL - 2022-08-03 08:16:03 --> Column 'nik' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(170): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('53')
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 08:17:49 --> Column 'nik' cannot be null
+CRITICAL - 2022-08-03 08:17:49 --> Column 'nik' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(170): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('55')
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 08:18:23 --> Column 'nik' cannot be null
+CRITICAL - 2022-08-03 08:18:23 --> Column 'nik' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(170): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('55')
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 08:18:27 --> Column 'nik' cannot be null
+CRITICAL - 2022-08-03 08:18:27 --> Column 'nik' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(170): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('55')
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 08:18:36 --> Column 'nik' cannot be null
+CRITICAL - 2022-08-03 08:18:36 --> Column 'nik' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(170): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('55')
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+CRITICAL - 2022-08-03 08:19:22 --> Undefined variable: nik
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 162, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('55')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 08:33:53 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:35:11 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:36:01 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:36:31 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:37:32 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:39:17 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:42:06 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:48:48 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:48:49 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:54:13 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:54:43 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:54:53 --> Array to string conversion
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\Users\\XIANGL...', 172, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('58')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 08:55:11 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:55:41 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(154): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:55:44 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(154): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('52')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:55:48 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(154): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('53')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:55:58 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(154): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('53')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:56:01 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\accountEdit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 12, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(154): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('51')
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 08:56:19 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:56:30 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:57:18 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:57:38 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:57:44 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:57:53 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:58:09 --> A non-numeric value encountered
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\Users\\XIANGL...', 172, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('58')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 08:59:22 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 08:59:40 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:00:17 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:06:46 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:07:45 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:07:56 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:08:48 --> Array to string conversion
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\Users\\XIANGL...', 172, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->update('57')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 09:09:11 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:09:18 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:11:05 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:11:35 --> Undefined variable: id_account
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 151, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('57')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 09:11:37 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:11:38 --> Undefined variable: id_account
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 151, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('57')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 09:11:39 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:11:39 --> Undefined variable: id_account
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 151, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('57')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 09:11:45 --> Undefined variable: id_account
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Admin.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 151, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit('57')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 09:12:43 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:23:12 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:25:25 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 09:26:04 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 10:04:15 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-03 11:28:04 --> Undefined property: App\Controllers\Ticket::$TicketModel
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\XIANGL...', 21, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 11:30:00 --> Undefined property: App\Controllers\Ticket::$TicketModel
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\XIANGL...', 45, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 11:30:29 --> Undefined property: App\Controllers\Ticket::$TicketModel
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\XIANGL...', 45, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 11:35:22 --> Undefined variable: ticket
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Views\pages\ticketList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 83, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketLis...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(48): view('pages/ticketLis...', Array)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-03 11:35:38 --> Undefined property: App\Controllers\Ticket::$TicketModel
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\XIANGL...', 45, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 11:38:18 --> Undefined property: App\Controllers\Ticket::$TicketModel
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\XIANGL...', 45, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 11:38:22 --> Undefined property: App\Controllers\Ticket::$TicketModel
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\XIANGL...', 45, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-03 11:39:48 --> Undefined property: App\Controllers\Ticket::$TicketModel
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\XIANGL...', 45, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list()
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+ERROR - 2022-08-03 11:49:38 --> Column 'status' cannot be null
+CRITICAL - 2022-08-03 11:49:38 --> Column 'status' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(43): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->save()
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 11:54:22 --> Column 'priority' cannot be null
+CRITICAL - 2022-08-03 11:54:22 --> Column 'priority' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(42): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->save()
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 11:57:08 --> Column 'urgency' cannot be null
+CRITICAL - 2022-08-03 11:57:08 --> Column 'urgency' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(42): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->save()
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 11:57:49 --> Column 'urgency' cannot be null
+CRITICAL - 2022-08-03 11:57:49 --> Column 'urgency' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(42): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->save()
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 11:57:55 --> Column 'urgency' cannot be null
+CRITICAL - 2022-08-03 11:57:55 --> Column 'urgency' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(42): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->save()
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-08-03 12:05:24 --> Column 'my_device' cannot be null
+CRITICAL - 2022-08-03 12:05:24 --> Column 'my_device' cannot be null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->save()
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}

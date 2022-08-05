@@ -36,7 +36,7 @@
                         <th class="text-nowrap">Name Solved</th>
                         <th class="text-nowrap">Final Status</th>
                         <th class="text-nowrap">Category</th>
-                        <th class="text-nowrap">action</th>
+                        <th class="text-nowrap d-print-none">action</th>
 
                         <!-- detail ticket -->
                         <!-- <th class="text-nowrap">Opening Date</th>
@@ -58,7 +58,7 @@
                         <td>Zulvi</td>
                         <td>Close</td>
                         <td> Network Problem</td>
-                        <td><a href="#" class="btn btn-sm btn-warning">Detail</a></td>
+                        <td class="d-print-none"><a href="#" class="btn btn-sm btn-warning">Detail</a></td>
                         <!-- <td>dummy</td>
                         <td>dummy</td>
                         <td>dummy</td>
@@ -78,7 +78,7 @@
                         <th class="text-nowrap">Name Solved</th>
                         <th class="text-nowrap">Final Status</th>
                         <th class="text-nowrap">Category</th>
-                        <th class="text-nowrap">action</th>
+                        <th class="text-nowrap d-print-none">action</th>
                         <!-- <th>Opening Date</th>
                         <th>Last Update</th>
                         <th>Plugins-Info-Ext.</th>
@@ -118,7 +118,7 @@
     $(document).ready(function() {
         var table = $('#tableTicketList').DataTable({
             lengthChange: false,
-            buttons: ['copy', 'excel', 'pdf', 'colvis']
+            buttons: ['print', 'excel']
         });
 
         table.buttons().container()

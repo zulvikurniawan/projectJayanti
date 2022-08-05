@@ -21,17 +21,17 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="text" class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" name="password" placeholder="Input ID" autofocus value="<?= old('password'); ?>">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Input Nama" autofocus value="<?= old('nama'); ?>">
                     <div class="invalid-feedback">
-                        <?= $validation->getError('password'); ?>
+                        <?= $validation->getError('nama'); ?>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="nama" class="form-label">Nama</label>
-                    <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Input ID" autofocus value="<?= old('nama'); ?>">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" name="password" placeholder="Input Password" autofocus value="<?= old('password'); ?>">
                     <div class="invalid-feedback">
-                        <?= $validation->getError('nama'); ?>
+                        <?= $validation->getError('password'); ?>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -88,7 +88,7 @@
         </div>
         <div class="row justify-content-end">
             <div class="col-5 mb-3">
-                <a href="/admin" type="button" class="btn btn-secondary">Back</a>
+                <a href="/Admin" type="button" class="btn btn-secondary">Back</a>
                 <button type="submit" class="btn btn-primary">Save</button>
             </div>
         </div>
