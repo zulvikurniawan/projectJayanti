@@ -13,10 +13,13 @@
         <div class="col-2">
             <h5 class="mb-3">From Date</h5>
             <h5 class="mb-3">Until Date</h5>
+            <h5 class="mb-3">Category</h5>
+
         </div>
         <div class="col-3">
             <input class="form-control form-control-sm mb-2" type="date">
-            <input class="form-control form-control-sm" type="date">
+            <input class="form-control form-control-sm mb-2" type="date">
+            <input class="form-control form-control-sm" type="text">
         </div>
     </div>
     <div class="row mb-3" style="margin-left:203px;">
@@ -25,6 +28,11 @@
         </div>
     </div>
     <hr>
+    <div class="row">
+        <div class="col text-center">
+            <h6>Total Data : </h6>
+        </div>
+    </div>
     <div class="row">
         <div class="col scrollTable" style="overflow-x: auto">
             <table id="tableTicketList" class="table table-striped table-hover" style="width:100%">
