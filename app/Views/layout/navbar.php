@@ -24,7 +24,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">
                         <li><a class="dropdown-item" href="/profile">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <li><a class="dropdown-item" href="/login/logout">Logout</a></li>
                     </ul>
                 </li>
             </ul>

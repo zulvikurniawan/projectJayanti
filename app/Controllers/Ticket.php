@@ -5,6 +5,8 @@ namespace App\Controllers;
 class Ticket extends BaseController
 {
 
+    protected $TicketModel;
+
     public function index()
     {
         $data = [

@@ -24,30 +24,44 @@
         <div class="row text-center">
             <div class="col">
                 <h3>LOGIN</h3>
+                <?php if (session()->getFlashdata('error')) : ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('error'); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('success')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('success'); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 mt-2">
-                <div class="form-floating mb-3 ">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Username">
-                    <label for="floatingInput">Username</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-                <div class="row mt-3">
-                    <div class="col text-end">
-                        <a href="/home" type="button" class="btn btn-secondary btnLogin">LOGIN</a>
+        <form action="/login/proses" method="post">
+            <div class="row">
+                <div class="col-6 mt-2">
+                    <div class="form-floating mb-3 ">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col text-end">
+                            <button class="btn btn-secondary btnLogin" type="submit">LOGIN</button>
+                        </div>
                     </div>
                 </div>
+                <div class="col-6">
+                    <h4 style="margin-left:60px;">PT. PANARUB</h4>
+                    <img src="/img/logoPanarub.jpg" alt="logoPanarub" style="width: 200px; margin-left:2rem;">
+                </div>
             </div>
-            <div class="col-6">
-                <h4 style="margin-left:60px;">PT. PANARUB</h4>
-                <img src="/img/logoPanarub.jpg" alt="logoPanarub" style="width: 200px; margin-left:2rem;">
-            </div>
-        </div>
+        </form>
 
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -33,4 +33,12 @@ class AccountModel extends Model
 
         return $this->where(['id_account' => $id_account])->first();
     }
+
+    public function getUsername($username = false)
+    {
+        if ($username == false) {
+            return session()->setFlashdata('error', 'Username Tidak Boleh Kosong.');
+        }
+        return $this->where(['nik' => $username])->first();
+    }
 }
