@@ -10,9 +10,10 @@ class Ticket extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Ticket Status | Jayanti Program'
+            'title' => 'Ticket Status | Jayanti Program',
+            'statusTicket' => array_column($this->TicketModel->getStatusTiket(session()->get('user')), 'COUNT', 'status')
         ];
-
+        // dd(array_key_exists('APROVAL', $data['statusTicket']));
         return view('pages/ticketView', $data);
     }
 
@@ -49,11 +50,11 @@ class Ticket extends BaseController
         return redirect()->to('/Ticket/list');
     }
 
-    public function list()
+    public function list($status = '')
     {
         $data = [
             'title' => 'Ticket List | Jayanti Program',
-            'ticket' => $this->TicketModel->getTicket()
+            'ticket' => $this->TicketModel->getTicketStatus($status)
         ];
 
         return view('pages/ticketList', $data);
@@ -81,7 +82,7 @@ class Ticket extends BaseController
     public function report()
     {
         $data = [
-            'title' => 'Report | Jayanti Program'
+            'title' => 'Report | Tiani Program'
         ];
 
         return view('pages/ticketReport', $data);

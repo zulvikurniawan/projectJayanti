@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'home::index');
 
 $routes->get('/Ticket/list/(:num)', 'Ticket::detail/$1');
+$routes->get('/Ticket/Status/(:alpha)', 'Ticket::list/$1');
 
 $routes->get('/Admin/edit/(:num)', 'Admin::edit/$1');
 $routes->get('/Admin/delete/(:num)', 'Admin::delete/$1');

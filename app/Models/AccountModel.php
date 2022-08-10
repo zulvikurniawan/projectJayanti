@@ -39,6 +39,10 @@ class AccountModel extends Model
         if ($username == false) {
             return session()->setFlashdata('error', 'Username Tidak Boleh Kosong.');
         }
-        return $this->where(['nik' => $username])->first();
+        return $this
+            ->select('account.*,j.nama as nama_jabatan')
+            ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->where(['nik' => $username])
+            ->first();
     }
 }

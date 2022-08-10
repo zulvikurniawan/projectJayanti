@@ -32,6 +32,7 @@ class Login extends BaseController
             return redirect()->to('/login')->withInput();
         } else {
             if ($password == $user['password']) {
+                session()->set('user', $user);
                 return redirect()->to('/home');
             } else {
                 session()->setFlashdata('error', 'Password Salah.');
@@ -42,6 +43,7 @@ class Login extends BaseController
 
     public function logout()
     {
+        session()->destroy('user');
         session()->setFlashdata('success', 'Anda Berhasil Logout.');
         return redirect()->to('/login');
     }
