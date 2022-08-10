@@ -20,7 +20,7 @@ class Ticket extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Create Ticket | Jayanti Program'
+            'title' => 'PT. PANARUB | Create Ticket'
         ];
 
         return view('pages/createTicketView', $data);
@@ -53,7 +53,7 @@ class Ticket extends BaseController
     public function list($status = '')
     {
         $data = [
-            'title' => 'Ticket List | Jayanti Program',
+            'title' => 'PT. PANARUB | Ticket List',
             'ticket' => $this->TicketModel->getTicketStatus($status)
         ];
 
@@ -63,7 +63,7 @@ class Ticket extends BaseController
     public function detail($id_ticket)
     {
         $data = [
-            'title' => 'Ticket Detail | Jayanti Program',
+            'title' => 'PT. PANARUB | Ticket Detail',
             'ticket' => $this->TicketModel->getTicket($id_ticket)
         ];
 
@@ -82,7 +82,7 @@ class Ticket extends BaseController
     public function report()
     {
         $data = [
-            'title' => 'Report | Tiani Program'
+            'title' => 'PT. PANARUB | Report'
         ];
 
         return view('pages/ticketReport', $data);
@@ -90,7 +90,7 @@ class Ticket extends BaseController
     public function approval()
     {
         $data = [
-            'title' => 'Ticket Approval | Jayanti Program',
+            'title' => 'PT. PANARUB | Ticket Approval',
             'ticket' => $this->TicketModel->getTicket()
         ];
 
@@ -100,7 +100,7 @@ class Ticket extends BaseController
     public function chat()
     {
         $data = [
-            'title' => 'Ticket | Jayanti Program'
+            'title' => 'PT. PANARUB | Ticket'
         ];
 
         return view('pages/chat', $data);

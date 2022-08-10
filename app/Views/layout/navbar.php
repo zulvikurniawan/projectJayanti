@@ -16,6 +16,12 @@
                     <a class="nav-link" href="/Ticket">Status Ticket</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/ticket/approval">Ticket Approval</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ticket/report">Report</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/Admin">Admin</a>
                 </li>
                 <li class="nav-item dropdown">

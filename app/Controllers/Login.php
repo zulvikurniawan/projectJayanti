@@ -12,7 +12,7 @@ class Login extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Login | Jayanti Program'
+            'title' => 'PT. PANARUB | Login'
         ];
 
         return view('pages/login', $data);

@@ -20,6 +20,7 @@
                <input class="form-control form-control-sm mb-2" type="date">
                <input class="form-control form-control-sm mb-2" type="date">
                <select name="cars" id="cars" class="form-select">
+                    <option value="volvo" hidden disabled>Select Type</option>
                     <option value="volvo">All</option>
                     <option value="volvo">Software Problem</option>
                     <option value="volvo">Hardware Problem</option>
@@ -29,7 +30,7 @@
      </div>
      <div class="row mb-3" style="margin-left:203px;">
           <div class="col">
-               <a class="btn btn-sm btn-primary" href="#">Submit</a>
+               <button class="btn btn-sm btn-primary" href="#">Search</button>
           </div>
      </div>
      <hr>
@@ -129,15 +130,15 @@
 <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js"></script>
 
 <script>
-$(document).ready(function() {
-     var table = $('#tableTicketList').DataTable({
-          lengthChange: false,
-          buttons: ['print', 'excel']
-     });
+     $(document).ready(function() {
+          var table = $('#tableTicketList').DataTable({
+               lengthChange: false,
+               buttons: ['print']
+          });
 
-     table.buttons().container()
-          .appendTo('#tableTicketList_wrapper .col-md-6:eq(0)');
-});
+          table.buttons().container()
+               .appendTo('#tableTicketList_wrapper .col-md-6:eq(0)');
+     });
 </script>
 
 

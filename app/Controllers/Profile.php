@@ -8,7 +8,7 @@ class Profile extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Profile | Jayanti Program'
+            'title' => 'PT. PANARUB | Profile'
         ];
 
         return view('pages/profileView', $data);

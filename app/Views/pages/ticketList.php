@@ -8,51 +8,46 @@
                <h3>Ticket List</h3>
                <hr>
                <?php if (session()->getFlashdata('tambahData')) : ?>
-               <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <?= session()->getFlashdata('tambahData'); ?>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-               </div>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                         <?= session()->getFlashdata('tambahData'); ?>
+                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                <?php endif; ?>
                <?php if (session()->getFlashdata('hapusData')) : ?>
-               <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <?= session()->getFlashdata('hapusData'); ?>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-               </div>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                         <?= session()->getFlashdata('hapusData'); ?>
+                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                <?php endif; ?>
           </div>
      </div>
-     <div class="row mb-2">
-          <div class="col-2">
-               <h5 class="mb-3">Status</h5>
-               <h5 class="mb-3">Priority</h5>
-               <h5 class=>Category</h5>
+     <form action="" method="post">
+          <div class="row mb-2">
+               <div class="col-2">
+                    <h5 class="mb-3">Priority</h5>
+                    <h5 class=>Category</h5>
+               </div>
+               <div class="col-3">
+                    <select class="form-select form-select-sm text-center mb-2" aria-label="Default select example" id="Priority" name="Priority">
+                         <option hidden selected>Select Priority</option>
+                         <option value="low">Low</option>
+                         <option value="medium">Medium</option>
+                         <option value="high">High</option>
+                    </select>
+                    <select class="form-select form-select-sm text-center" aria-label="Default select example" id="category" name="category">
+                         <option hidden selected>Select Category</option>
+                         <option value="Network Problem">Network Problem</option>
+                         <option value="Hardware Problem">Hardware Problem</option>
+                         <option value="Software Problem">Software Problem</option>
+                    </select>
+               </div>
           </div>
-          <div class="col-3">
-               <select class="form-select form-select-sm mb-2" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-               </select>
-               <select class="form-select form-select-sm mb-2" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-               </select>
-               <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-               </select>
+          <div class="row mb-3" style="margin-left:203px;">
+               <div class="col">
+                    <button class="btn btn-sm btn-primary" href="#">Search</button>
+               </div>
           </div>
-     </div>
-     <div class="row mb-3" style="margin-left:203px;">
-          <div class="col">
-               <a class="btn btn-sm btn-primary" href="#">Submit</a>
-          </div>
-     </div>
+     </form>
      <hr>
      <div class="row">
           <div class="col scrollTable" style="overflow-x: auto">
@@ -81,16 +76,15 @@
                     </thead>
                     <tbody>
                          <?php foreach ($ticket as $t) : ?>
-                         <tr>
-                              <td><?= $t['id_ticket']; ?></td>
-                              <td><?= $t['created_at']; ?></td>
-                              <td><?= $t['status']; ?></td>
-                              <td><?= $t['priority']; ?></td>
-                              <td><?= $t['category']; ?></td>
-                              <td><?= $t['title']; ?></td>
-                              <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>"
-                                        class="btn btn-sm btn-warning">Detail</a></td>
-                              <!-- <td>dummy</td>
+                              <tr>
+                                   <td><?= $t['id_ticket']; ?></td>
+                                   <td><?= $t['created_at']; ?></td>
+                                   <td><?= $t['status']; ?></td>
+                                   <td><?= $t['priority']; ?></td>
+                                   <td><?= $t['category']; ?></td>
+                                   <td><?= $t['title']; ?></td>
+                                   <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>" class="btn btn-sm btn-warning">Detail</a></td>
+                                   <!-- <td>dummy</td>
                         <td>dummy</td>
                         <td>dummy</td>
                         <td>dummy</td>
@@ -99,7 +93,7 @@
                         <td>dummy</td>
                         <td>dummy</td>
                         <td>dummy</td> -->
-                         </tr>
+                              </tr>
                          <?php endforeach; ?>
                     </tbody>
                     <tfoot>
@@ -138,11 +132,11 @@
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
 <script>
-$(document).ready(function() {
-     $('#tableTicketList').DataTable({
-          lengthChange: false,
+     $(document).ready(function() {
+          $('#tableTicketList').DataTable({
+               lengthChange: false,
+          });
      });
-});
 </script>
 
 

@@ -26,7 +26,6 @@
                     <td scope="row"><a href="/Ticket/Status/APROVAL" style="text-decoration:none">Approval</a></td>
                     <td scope="row" class="text-end">
                          <?= (array_key_exists('APROVAL', $statusTicket)) ? $statusTicket['APROVAL'] : '0'; ?>
-
                     </td>
                </tr>
                <tr>
@@ -54,7 +53,7 @@
                     </td>
                </tr>
                <tr>
-                    <td scope="row"><a href="/Ticket/list" style="text-decoration:none">History</a></td>
+                    <td scope="row"><a href="/Ticket/history" style="text-decoration:none">History</a></td>
                     <td scope="row" class="text-end">
                          <?= (array_key_exists('HISTORY', $statusTicket)) ? $statusTicket['HISTORY'] : '0'; ?>
                     </td>

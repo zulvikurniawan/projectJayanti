@@ -17,10 +17,10 @@
             <label for="type" class="col-sm-4 col-form-label">Type</label>
             <div class="col-3">
                 <select class="form-select form-select-sm text-center" aria-label="Default select example" id="type" name="type">
-                    <option hidden selected>Request</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option hidden selected>Select Type</option>
+                    <option value="Request">Request</option>
+                    <option value="2">.</option>
+                    <option value="3">..</option>
                 </select>
             </div>
         </div>
@@ -28,32 +28,39 @@
             <label for="category" class="col-sm-4 col-form-label">Category</label>
             <div class="col-3">
                 <select class="form-select form-select-sm text-center" aria-label="Default select example" id="category" name="category">
-                    <option hidden selected>Network Problem</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option hidden selected>Select Category</option>
+                    <option value="Network Problem">Network Problem</option>
+                    <option value="Hardware Problem">Hardware Problem</option>
+                    <option value="Software Problem">Software Problem</option>
                 </select>
+            </div>
+        </div>
+        <div class="row">
+            <label for="urgency" class="col-sm-4 col-form-label" hidden>Urgency</label>
+            <div class="col-3">
+                <input type="text" class="form-control form-control-sm" id="urgency" name="urgency" hidden value="">
             </div>
         </div>
         <div class="row mb-2">
             <label for="urgency" class="col-sm-4 col-form-label">Urgency</label>
             <div class="col-3">
-                <select class="form-select form-select-sm text-center" aria-label="Default select example" id="urgency" name="urgency">
+                <input type="text" class="form-control form-control-sm" id="urgency" name="urgency" disabled value="">
+                <!-- <select class="form-select form-select-sm text-center" aria-label="Default select example" id="urgency" name="urgency" disabled>
                     <option hidden selected>Medium</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
-                </select>
+                </select> -->
             </div>
         </div>
         <div class="row mb-4">
             <label for="Priority" class="col-sm-4 col-form-label">Priority</label>
             <div class="col-3">
                 <select class="form-select form-select-sm text-center" aria-label="Default select example" id="Priority" name="Priority">
-                    <option hidden selected>Medium</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option hidden selected>Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
                 </select>
             </div>
         </div>
@@ -90,24 +97,24 @@
             <label for="my_device" class="col-sm-4 col-form-label">My Devices</label>
             <div class="col-3">
                 <select class="form-select form-select-sm text-center" aria-label="Default select example" id="my_device" name="my_device">
-                    <option hidden selected>-----</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option hidden selected>Select Devices</option>
+                    <option value="1">Laptop</option>
+                    <option value="2">Desktop</option>
+                    <option value="3">..</option>
                 </select>
             </div>
-            <div class="col-1">
+            <!-- <div class="col-1">
                 <button type="button" class="btn btn-warning btn-sm">Add</button>
-            </div>
+            </div> -->
         </div>
         <div class="row mb-4">
             <label for="location" class="col-sm-4 col-form-label">Location</label>
             <div class="col-3">
                 <select class="form-select form-select-sm text-center" aria-label="Default select example" id="location" name="location">
-                    <option hidden selected>-----</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option hidden selected>Select Location</option>
+                    <option value="1">Office</option>
+                    <option value="2">.</option>
+                    <option value="3">..</option>
                 </select>
             </div>
         </div>
@@ -166,20 +173,19 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-4">
-            <label for="Email" class="col-sm-2 col-form-label fw-bold text-end">IP Addres</label>
-            <div class="col-sm-2">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-sm-3 d-inline-flex">
+                <label for="Email" class="col-sm-3 col-form-label fw-bold text-end me-3">IP Addres</label>
                 <input type="text" class="form-control form-control-sm" id="ip" name="ip">
             </div>
-            <label for="Email" class="col-sm-2 col-form-label fw-bold text-end">Ext.</label>
-            <div class="col-sm-2">
+            <div class="col-sm-3 d-inline-flex">
+                <label for="Email" class="col-sm-3 col-form-label fw-bold text-end me-3">Ext.</label>
                 <input type="text" class="form-control form-control-sm" id="ext" name="ext">
             </div>
         </div>
-        <div class="row mb-4 justify-content-center">
-            <div class="col-4"></div>
-            <div class="col-2">
-                <button type="submit" class="btn btn-sm btn-warning">Submit Massage</button>
+        <div class="row">
+            <div class="col text-end">
+                <button type="submit" class="btn btn-warning shadow">Submit Massage</button>
             </div>
         </div>
     </form>

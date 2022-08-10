@@ -14,7 +14,7 @@ class Admin extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Admin | Jayanti Program',
+            'title' => 'PT. PANARUB | Admin',
             'account' => $this->AccountModel->getAdmin()
         ];
 
@@ -25,7 +25,7 @@ class Admin extends BaseController
     public function detail($id_account)
     {
         $data = [
-            'title' => 'Detail Account | Jayanti Program',
+            'title' => 'PT. PANARUB | Detail Account',
             'admin' => $this->AccountModel->getAdmin($id_account)
         ];
 
@@ -35,7 +35,7 @@ class Admin extends BaseController
     public function accountAdd()
     {
         $data = [
-            'title' => 'Add Account | Jayanti Program',
+            'title' => 'PT. PANARUB | Add Account',
             'validation' => \config\Services::validation()
         ];
 
@@ -146,7 +146,7 @@ class Admin extends BaseController
     public function edit($id_account)
     {
         $data = [
-            'title' => 'Edit Account | Jayanti Program',
+            'title' => 'PT. PANARUB | Edit Account',
             'validation' => \config\Services::validation(),
             'admin' => $this->AccountModel->getAdmin($id_account)
         ];

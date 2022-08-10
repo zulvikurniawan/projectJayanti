@@ -9,21 +9,36 @@
             <hr>
         </div>
     </div>
-    <div class="row mb-2">
-        <div class="col-2">
-            <h5 class="mb-3">From Date</h5>
-            <h5 class="mb-3">Until Date</h5>
+
+    <form action="" method="post">
+        <div class="row mb-2">
+            <div class="col-2">
+                <h5 class="mb-3">Status</h5>
+                <h5 class="mb-3">From Date</h5>
+                <h5 class="mb-3">Until Date</h5>
+            </div>
+            <div class="col-3">
+                <select class="form-select form-select-sm text-center mb-2" aria-label="Default select example" id="Priority" name="Priority">
+                    <option hidden selected>Select Status</option>
+                    <option value="new">New</option>
+                    <option value="approval">Approval</option>
+                    <option value="reject">Reject</option>
+                    <option value="pending">Pending</option>
+                    <option value="solved">Solved</option>
+                    <option value="closed">Closed</option>
+                    <option value="delete">Delete</option>
+                </select>
+                <input class="form-control form-control-sm mb-2" type="date">
+                <input class="form-control form-control-sm" type="date">
+            </div>
         </div>
-        <div class="col-3">
-            <input class="form-control form-control-sm mb-2" type="date">
-            <input class="form-control form-control-sm" type="date">
+        <div class="row mb-3" style="margin-left:203px;">
+            <div class="col">
+                <button class="btn btn-sm btn-primary" href="#">Search</button>
+            </div>
         </div>
-    </div>
-    <div class="row mb-3" style="margin-left:203px;">
-        <div class="col">
-            <a class="btn btn-sm btn-primary" href="#">Submit</a>
-        </div>
-    </div>
+    </form>
+
     <hr>
     <div class="row">
         <div class="col scrollTable" style="overflow-x: auto">
