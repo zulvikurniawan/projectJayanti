@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\Request;
+
 class Ticket extends BaseController
 {
 
@@ -54,10 +56,17 @@ class Ticket extends BaseController
     {
         $data = [
             'title' => 'Ticket List | Jayanti Program',
+            'status' => $status,
             'ticket' => $this->TicketModel->getTicketStatus($status)
         ];
 
         return view('pages/ticketList', $data);
+    }
+
+    public function Status()
+    {
+        # code...
+        dd($this->request->getPost());
     }
 
     public function detail($id_ticket)
@@ -66,14 +75,17 @@ class Ticket extends BaseController
             'title' => 'Ticket Detail | Jayanti Program',
             'ticket' => $this->TicketModel->getTicket($id_ticket)
         ];
+        // dd(session()->get());
 
         return view('pages/ticketDetail', $data);
     }
 
-    public function history()
+    public function history($status = '')
     {
         $data = [
-            'title' => 'Ticket History | Jayanti Program'
+            'title' => 'Ticket History | Jayanti Program',
+            'status' => $status,
+            'ticket' => $this->TicketModel->getTicketStatus($status)
         ];
 
         return view('pages/ticketHistory', $data);
@@ -91,10 +103,30 @@ class Ticket extends BaseController
     {
         $data = [
             'title' => 'Ticket Approval | Jayanti Program',
-            'ticket' => $this->TicketModel->getTicket()
+            'ticket' => $this->TicketModel->getTicketStatus('NEW')
         ];
 
         return view('pages/ticketApproval', $data);
+    }
+
+    public function acc($id)
+    {
+        $this->TicketModel->save([
+            'id_ticket' => $id,
+            'status' => 'approve',
+        ]);
+        session()->setFlashdata('tambahData', 'Data berhasil diapprove.');
+        return redirect()->to('/Ticket/approval');
+    }
+
+    public function reject($id)
+    {
+        $this->TicketModel->save([
+            'id_ticket' => $id,
+            'status' => 'rejected',
+        ]);
+        session()->setFlashdata('tambahData', 'Data berhasil direject.');
+        return redirect()->to('/Ticket/approval');
     }
 
     public function chat()

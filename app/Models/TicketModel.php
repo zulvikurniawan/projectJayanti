@@ -25,7 +25,7 @@ class TicketModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function getTicket($id_ticket = false,)
+    public function getTicket($id_ticket = false)
     {
         if ($id_ticket == false) {
             return $this->findAll();

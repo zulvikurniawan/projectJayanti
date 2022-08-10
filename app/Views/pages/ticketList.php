@@ -3,56 +3,58 @@
 <?= $this->section('content'); ?>
 
 <div class="container bg-white mt-3 shadow">
-     <div class="row">
-          <div class="col text-center">
-               <h3>Ticket List</h3>
-               <hr>
-               <?php if (session()->getFlashdata('tambahData')) : ?>
-               <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <?= session()->getFlashdata('tambahData'); ?>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     <form action="/Ticket/Status" method="post">
+          <div class="row">
+               <div class="col text-center">
+                    <h3>Ticket List</h3>
+                    <hr>
+                    <?php if (session()->getFlashdata('tambahData')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                         <?= session()->getFlashdata('tambahData'); ?>
+                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <?php endif; ?>
+                    <?php if (session()->getFlashdata('hapusData')) : ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                         <?= session()->getFlashdata('hapusData'); ?>
+                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <?php endif; ?>
                </div>
-               <?php endif; ?>
-               <?php if (session()->getFlashdata('hapusData')) : ?>
-               <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <?= session()->getFlashdata('hapusData'); ?>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="row mb-2">
+               <div class="col-2">
+                    <h5 class="mb-3">Status</h5>
+                    <h5 class="mb-3">Priority</h5>
+                    <h5 class=>Category</h5>
                </div>
-               <?php endif; ?>
+               <div class="col-3">
+                    <select class="form-select form-select-sm mb-2" aria-label="Default select example">
+                         <option selected>Open this select menu</option>
+                         <option value="1">One</option>
+                         <option value="2">Two</option>
+                         <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-sm mb-2" aria-label="Default select example">
+                         <option selected>Open this select menu</option>
+                         <option value="1">One</option>
+                         <option value="2">Two</option>
+                         <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                         <option selected>Open this select menu</option>
+                         <option value="1">One</option>
+                         <option value="2">Two</option>
+                         <option value="3">Three</option>
+                    </select>
+               </div>
           </div>
-     </div>
-     <div class="row mb-2">
-          <div class="col-2">
-               <h5 class="mb-3">Status</h5>
-               <h5 class="mb-3">Priority</h5>
-               <h5 class=>Category</h5>
+          <div class="row mb-3" style="margin-left:203px;">
+               <div class="col">
+                    <button type="submit" class="btn btn-primary">Search</button>
+               </div>
           </div>
-          <div class="col-3">
-               <select class="form-select form-select-sm mb-2" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-               </select>
-               <select class="form-select form-select-sm mb-2" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-               </select>
-               <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-               </select>
-          </div>
-     </div>
-     <div class="row mb-3" style="margin-left:203px;">
-          <div class="col">
-               <a class="btn btn-sm btn-primary" href="#">Submit</a>
-          </div>
-     </div>
+     </form>
      <hr>
      <div class="row">
           <div class="col scrollTable" style="overflow-x: auto">

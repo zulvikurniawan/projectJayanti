@@ -23,38 +23,43 @@
                     </td>
                </tr>
                <tr>
-                    <td scope="row"><a href="/Ticket/Status/APROVAL" style="text-decoration:none">Approval</a></td>
+                    <td scope="row"><a href="/Ticket/Status/approve" style="text-decoration:none">Approve</a></td>
                     <td scope="row" class="text-end">
-                         <?= (array_key_exists('APROVAL', $statusTicket)) ? $statusTicket['APROVAL'] : '0'; ?>
-
+                         <?= (array_key_exists('APPROVE', $statusTicket)) ? $statusTicket['APPROVE'] : '0'; ?>
                     </td>
                </tr>
                <tr>
-                    <td scope="row"><a href="/Ticket/Status/PENDDING" style="text-decoration:none">Pendding</a></td>
+                    <td scope="row"><a href="/Ticket/Status/rejected" style="text-decoration:none">Rejected</a></td>
                     <td scope="row" class="text-end">
-                         <?= (array_key_exists('PENDDING', $statusTicket)) ? $statusTicket['PENDDING'] : '0'; ?>
+                         <?= (array_key_exists('REJECTED', $statusTicket)) ? $statusTicket['REJECTED'] : '0'; ?>
                     </td>
                </tr>
                <tr>
-                    <td scope="row"><a href="/Ticket/Status/SOLVED" style="text-decoration:none">Solved</a></td>
+                    <td scope="row"><a href="/Ticket/Status/pending" style="text-decoration:none">Pending</a></td>
+                    <td scope="row" class="text-end">
+                         <?= (array_key_exists('PENDING', $statusTicket)) ? $statusTicket['PENDING'] : '0'; ?>
+                    </td>
+               </tr>
+               <tr>
+                    <td scope="row"><a href="/Ticket/Status/solved" style="text-decoration:none">Solved</a></td>
                     <td scope="row" class="text-end">
                          <?= (array_key_exists('SOLVED', $statusTicket)) ? $statusTicket['SOLVED'] : '0'; ?>
                     </td>
                </tr>
                <tr>
-                    <td scope="row"><a href="/Ticket/Status/CLOSED" style="text-decoration:none">Closed</a></td>
+                    <td scope="row"><a href="/Ticket/Status/closed" style="text-decoration:none">Closed</a></td>
                     <td scope="row" class="text-end">
                          <?= (array_key_exists('CLOSED', $statusTicket)) ? $statusTicket['CLOSED'] : '0'; ?>
                     </td>
                </tr>
                <tr>
-                    <td scope="row"><a href="/Ticket/Status/DELETED" style="text-decoration:none">Deleted</a></td>
+                    <td scope="row"><a href="/Ticket/Status/deleted" style="text-decoration:none">Deleted</a></td>
                     <td scope="row" class="text-end">
                          <?= (array_key_exists('DELETED', $statusTicket)) ? $statusTicket['DELETED'] : '0'; ?>
                     </td>
                </tr>
                <tr>
-                    <td scope="row"><a href="/Ticket/list" style="text-decoration:none">History</a></td>
+                    <td scope="row"><a href="/Ticket/history" style="text-decoration:none">History</a></td>
                     <td scope="row" class="text-end">
                          <?= (array_key_exists('HISTORY', $statusTicket)) ? $statusTicket['HISTORY'] : '0'; ?>
                     </td>
