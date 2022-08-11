@@ -7,15 +7,16 @@
             <h2>Assign Teknisi</h2>
         </div>
     </div>
-    <form action="" method="POST">
+    <form action="/Ticket/assignSave" method="POST">
+        <input type="hidden" name="id" value="<?= $ticket['id_ticket']; ?>">
         <div class="row mb-3">
             <div class="col-3 d-flex">
                 <label class="fw-bold me-3">Teknisi</label>
                 <select class="form-select form-select-sm text-center" aria-label="Default select example" id="user" name="user">
-                    <option hidden selected>Select Teknisi</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option hidden selected value="">Select Teknisi</option>
+                    <?php foreach ($assignTo as $a) : ?>
+                        <option value="<?= $a['user']; ?>"></option>
+                    <?php endforeach; ?>
                 </select>
             </div>
         </div>

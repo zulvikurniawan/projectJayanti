@@ -45,4 +45,13 @@ class AccountModel extends Model
             ->where(['nik' => $username])
             ->first();
     }
+
+    public function getAssignTo()
+    {
+        return $this
+            ->select('account.*,j.nama as nama_jabatan')
+            ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->where(['j.id_jabatan' => '2'])
+            ->findAll();
+    }
 }

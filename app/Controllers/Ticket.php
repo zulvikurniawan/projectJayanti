@@ -8,6 +8,7 @@ class Ticket extends BaseController
 {
 
     protected $TicketModel;
+    protected $AccountModel;
 
     public function index()
     {
@@ -148,13 +149,29 @@ class Ticket extends BaseController
         return view('pages/ticketDetailAssign', $data);
     }
 
-    public function assign($status = '')
+    public function assign()
     {
+        $form = [];
+        $status = 'approve';
         $data = [
-            'title' => 'Ticket List | Jayanti Program',
-            'ticket' => $this->TicketModel->getTicketStatus($status)
+            'title' => 'Ticket Approval | Jayanti Program',
+            'ticket' => $this->TicketModel->getTicketStatus($status, $form),
+            'assignTo' => $this->AccountModel->getAssignTo()
         ];
 
+        dd($data['assignTo']);
+
         return view('pages/ticketAssign', $data);
+    }
+
+    public function assignSave($id)
+    {
+        $this->TicketModel->save([
+            'id_ticket' => $id,
+            'status' => 'proses',
+            'id_assign' => $this->request->getPost('user')
+        ]);
+        session()->setFlashdata('tambahData', 'Data berhasil diassign.');
+        return redirect()->to('/Ticket/approval');
     }
 }
