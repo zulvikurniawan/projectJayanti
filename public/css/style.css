@@ -24,7 +24,7 @@ max-width: 37rem;
 }
 
 /* home */
-.about{
+/* .about{
     background-color: rgba(43, 36, 36, 0.801);  
     backdrop-filter: blur(10px);
     opacity: 0.9;
@@ -35,7 +35,7 @@ max-width: 37rem;
     border-radius: 10px;
     color: white;
     margin: 0;
-}
+} */
 
 /* admin */
 .tableAdmin > tbody > tr > * {

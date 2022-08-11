@@ -1,0 +1,25 @@
+CRITICAL - 2022-08-11 11:13:56 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Models\TicketModel.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 50, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(16): App\Models\TicketModel->getStatusTiket(NULL)
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-11 11:14:49 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Models\TicketModel.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 50, Array)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Ticket.php(16): App\Models\TicketModel->getStatusTiket(NULL)
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-11 11:19:50 --> Too few arguments to function App\Controllers\Ticket::detailAssign(), 0 passed in C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->detailAssign()
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
