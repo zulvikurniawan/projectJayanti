@@ -1,7 +1,9 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
-<div class="bg-image"><img src="/img/backgorundPanarub4.jpg" alt="bgpanarub" style="width:100%;"></div>
+
+<div class="bg-image"><img src="/img/gambarHome.png" alt="bgpanarub" style="width:100%;"></div>
+<!-- <div class="bg-image"><img src="/img/backgorundPanarub4.jpg" alt="bgpanarub" style="width:100%;"></div>
 <div class="container containerAbout">
     <div class="row text-center mb-4">
         <div class="col">
@@ -13,7 +15,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <?= $this->endSection(); ?>
 
