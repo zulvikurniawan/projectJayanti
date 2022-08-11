@@ -136,4 +136,25 @@ class Ticket extends BaseController
 
         return view('pages/chat', $data);
     }
+
+    public function detailAssign($id_ticket)
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket Detail',
+            'ticket' => $this->TicketModel->getTicket($id_ticket)
+        ];
+        // dd(session()->get());
+
+        return view('pages/ticketDetailAssign', $data);
+    }
+
+    public function assign($status = '')
+    {
+        $data = [
+            'title' => 'Ticket List | Jayanti Program',
+            'ticket' => $this->TicketModel->getTicketStatus($status)
+        ];
+
+        return view('pages/ticketAssign', $data);
+    }
 }
