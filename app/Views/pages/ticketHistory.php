@@ -3,58 +3,59 @@
 <?= $this->section('content'); ?>
 
 <div class="container bg-white mt-3 shadow">
-    <div class="row">
-        <div class="col text-center">
-            <h3>Ticket History</h3>
-            <hr>
-        </div>
-    </div>
+     <div class="row">
+          <div class="col text-center">
+               <h3>Ticket History</h3>
+               <hr>
+          </div>
+     </div>
 
-    <form action="" method="post">
-        <div class="row mb-2">
-            <div class="col-2">
-                <h5 class="mb-3">Status</h5>
-                <h5 class="mb-3">From Date</h5>
-                <h5 class="mb-3">Until Date</h5>
-            </div>
-            <div class="col-3">
-                <select class="form-select form-select-sm text-center mb-2" aria-label="Default select example" id="Priority" name="Priority">
-                    <option hidden selected>Select Status</option>
-                    <option value="new">New</option>
-                    <option value="approval">Approval</option>
-                    <option value="reject">Reject</option>
-                    <option value="pending">Pending</option>
-                    <option value="solved">Solved</option>
-                    <option value="closed">Closed</option>
-                    <option value="delete">Delete</option>
-                </select>
-                <input class="form-control form-control-sm mb-2" type="date">
-                <input class="form-control form-control-sm" type="date">
-            </div>
-        </div>
-        <div class="row mb-3" style="margin-left:203px;">
-            <div class="col">
-                <button class="btn btn-sm btn-primary" href="#">Search</button>
-            </div>
-        </div>
-    </form>
+     <form action="/Ticket/history" method="post">
+          <div class="row mb-2">
+               <div class="col-2">
+                    <h5 class="mb-3">Status</h5>
+                    <h5 class="mb-3">From Date</h5>
+                    <h5 class="mb-3">Until Date</h5>
+               </div>
+               <div class="col-3">
+                    <select class="form-select form-select-sm text-center mb-2" aria-label="Default select example"
+                         id="status" name="status">
+                         <option selected value="">Select Status</option>
+                         <option value="new">New</option>
+                         <option value="Approve">Approve</option>
+                         <option value="Rejected">Rejected</option>
+                         <option value="Pending">Pending</option>
+                         <option value="Solved">Solved</option>
+                         <option value="Closed">Closed</option>
+                         <option value="Deleted">Deleted</option>
+                    </select>
+                    <input class="form-control form-control-sm mb-2" type="date" name="fromDate">
+                    <input class="form-control form-control-sm" type="date" name="toDate">
+               </div>
+          </div>
+          <div class="row mb-3" style="margin-left:203px;">
+               <div class="col">
+                    <button class="btn btn-sm btn-primary" href="#">Search</button>
+               </div>
+          </div>
+     </form>
 
-    <hr>
-    <div class="row">
-        <div class="col scrollTable" style="overflow-x: auto">
-            <table id="tableTicketList" class="table table-striped table-hover" style="width:100%">
-                <thead>
-                    <tr>
-                        <th class="text-nowrap">ID.</th>
-                        <th class="text-nowrap">Date</th>
-                        <th class="text-nowrap">Status</th>
-                        <th class="text-nowrap">Priority</th>
-                        <th class="text-nowrap">Category</th>
-                        <th class="text-nowrap">Title</th>
-                        <th class="text-nowrap">action</th>
+     <hr>
+     <div class="row">
+          <div class="col scrollTable" style="overflow-x: auto">
+               <table id="tableTicketList" class="table table-striped table-hover" style="width:100%">
+                    <thead>
+                         <tr>
+                              <th class="text-nowrap">ID.</th>
+                              <th class="text-nowrap">Date</th>
+                              <th class="text-nowrap">Status</th>
+                              <th class="text-nowrap">Priority</th>
+                              <th class="text-nowrap">Category</th>
+                              <th class="text-nowrap">Title</th>
+                              <th class="text-nowrap">action</th>
 
-                        <!-- detail ticket -->
-                        <!-- <th class="text-nowrap">Opening Date</th>
+                              <!-- detail ticket -->
+                              <!-- <th class="text-nowrap">Opening Date</th>
                         <th class="text-nowrap">Last Update</th>
                         <th class="text-nowrap">Plugins-Info-Ext.</th>
                         <th class="text-nowrap">Requester-Requester</th>
@@ -63,38 +64,34 @@
                         <th class="text-nowrap">Plugins Info - Ip Address</th>
                         <th class="text-nowrap">Resolution Date</th>
                         <th class="text-nowrap">Description</th> -->
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>170494</td>
-                        <td>30/07/2022</td>
-                        <td>Close</td>
-                        <td>Medium</td>
-                        <td>Network Problem</td>
-                        <td>Connetction fail</td>
-                        <td><a href="#" class="btn btn-sm btn-warning">Detail</a></td>
-                        <!-- <td>dummy</td>
-                        <td>dummy</td>
-                        <td>dummy</td>
-                        <td>dummy</td>
-                        <td>dummy</td>
-                        <td>dummy</td>
-                        <td>dummy</td>
-                        <td>dummy</td>
-                        <td>dummy</td> -->
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th class="text-nowrap">ID.</th>
-                        <th class="text-nowrap">Date</th>
-                        <th class="text-nowrap">Status</th>
-                        <th class="text-nowrap">Priority</th>
-                        <th class="text-nowrap">Category</th>
-                        <th class="text-nowrap">Title</th>
-                        <th class="text-nowrap">action</th>
-                        <!-- <th>Opening Date</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                              <?php foreach ($ticket as $t) : ?>
+                         <tr>
+                              <td><?= $t['id_ticket']; ?></td>
+                              <td><?= $t['created_at']; ?></td>
+                              <td><?= $t['status']; ?></td>
+                              <td><?= $t['priority']; ?></td>
+                              <td><?= $t['category']; ?></td>
+                              <td><?= $t['title']; ?></td>
+                              <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>"
+                                        class="btn btn-sm btn-warning">Detail</a></td>
+                         </tr>
+                         <?php endforeach; ?>
+                         </tr>
+                    </tbody>
+                    <tfoot>
+                         <tr>
+                              <th class="text-nowrap">ID.</th>
+                              <th class="text-nowrap">Date</th>
+                              <th class="text-nowrap">Status</th>
+                              <th class="text-nowrap">Priority</th>
+                              <th class="text-nowrap">Category</th>
+                              <th class="text-nowrap">Title</th>
+                              <th class="text-nowrap">action</th>
+                              <!-- <th>Opening Date</th>
                         <th>Last Update</th>
                         <th>Plugins-Info-Ext.</th>
                         <th>Requester-Requester</th>
@@ -103,11 +100,11 @@
                         <th>Plugins Info - Ip Address</th>
                         <th>Resolution Date</th>
                         <th>Description</th> -->
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-    </div>
+                         </tr>
+                    </tfoot>
+               </table>
+          </div>
+     </div>
 </div>
 
 
@@ -122,11 +119,11 @@
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
 <script>
-    $(document).ready(function() {
-        $('#tableTicketList').DataTable({
-            lengthChange: false,
-        });
-    });
+$(document).ready(function() {
+     $('#tableTicketList').DataTable({
+          lengthChange: false,
+     });
+});
 </script>
 
 

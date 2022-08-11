@@ -25,7 +25,7 @@
                <tr>
                     <td scope="row"><a href="/Ticket/Status/approve" style="text-decoration:none">Approve</a></td>
                     <td scope="row" class="text-end">
-                         <?= (array_key_exists('APROVAL', $statusTicket)) ? $statusTicket['APROVAL'] : '0'; ?>
+                         <?= (array_key_exists('APPROVE', $statusTicket)) ? $statusTicket['APPROVE'] : '0'; ?>
                     </td>
                </tr>
                <tr>

@@ -34,15 +34,31 @@ class TicketModel extends Model
         return $this->where(['id_ticket' => $id_ticket])->first();
     }
 
-    public function getTicketStatus($ticketStatus = false)
+    public function getTicketStatus($ticketStatus, $form)
     {
-        if ($ticketStatus == false) {
-            return $this->findAll();
+        if (empty($form)) {
+            return $this->where(['status' => $ticketStatus])->findAll();
         }
-        return $this->where(['status' => $ticketStatus])->findAll();
+        $data = [];
+        ($ticketStatus != "") ? $data['status'] = $ticketStatus : '';
+        (array_key_exists('priority', $form) && $form['priority'] != "") ? $data['priority'] = $form['priority'] : '';
+        (array_key_exists('category', $form) && $form['category'] != "") ? $data['category'] = $form['category'] : '';
+        return $this->where($data)->findAll();
     }
 
-    public function getStatusTiket($user)
+    public function getTicketStatusForm($ticketStatus)
+    {
+        if (empty($ticketStatus)) {
+            return $this->findAll();
+        }
+        $data = [];
+        (array_key_exists('status', $ticketStatus) && $ticketStatus['status'] != "") ? $data['status'] = $ticketStatus['status'] : '';
+        (array_key_exists('fromDate', $ticketStatus) && $ticketStatus['fromDate'] != "") ? $data['created_at >'] = $ticketStatus['fromDate'] : '';
+        (array_key_exists('toDate', $ticketStatus) && $ticketStatus['toDate'] != "") ? $data['created_at <'] = $ticketStatus['toDate'] : '';
+        return $this->where($data)->findAll();
+    }
+
+    public function getStatusTiket($user, $form)
     {
         $where = '';
         $data = [];

@@ -11,10 +11,12 @@ class Ticket extends BaseController
 
     public function index()
     {
+        $form = $this->request->getPost();
         $data = [
             'title' => 'Ticket Status | Jayanti Program',
-            'statusTicket' => array_column($this->TicketModel->getStatusTiket(session()->get('user')), 'COUNT', 'status')
+            'statusTicket' => array_column($this->TicketModel->getStatusTiket(session()->get('user'), $form), 'COUNT', 'status')
         ];
+        // dd($data['statusTicket']);
         // dd(array_key_exists('APROVAL', $data['statusTicket']));
         return view('pages/ticketView', $data);
     }
@@ -52,20 +54,16 @@ class Ticket extends BaseController
         return redirect()->to('/Ticket/list');
     }
 
-    public function list($status = '')
+    public function list($status)
     {
+        $form = $this->request->getPost();
         $data = [
             'title' => 'Ticket List | Jayanti Program',
-            'ticket' => $this->TicketModel->getTicketStatus($status)
+            'ticket' => $this->TicketModel->getTicketStatus($status, $form),
+            'status' => $status
         ];
 
         return view('pages/ticketList', $data);
-    }
-
-    public function Status()
-    {
-        # code...
-        dd($this->request->getPost());
     }
 
     public function detail($id_ticket)
@@ -79,14 +77,14 @@ class Ticket extends BaseController
         return view('pages/ticketDetail', $data);
     }
 
-    public function history($status = '')
+    public function history()
     {
+        $status = $this->request->getPost();
         $data = [
             'title' => 'Ticket History | Jayanti Program',
             'status' => $status,
-            'ticket' => $this->TicketModel->getTicketStatus($status)
+            'ticket' => $this->TicketModel->getTicketStatusForm($status)
         ];
-
         return view('pages/ticketHistory', $data);
     }
 
@@ -100,9 +98,11 @@ class Ticket extends BaseController
     }
     public function approval()
     {
+        $form = [];
+        $status = 'NEW';
         $data = [
             'title' => 'Ticket Approval | Jayanti Program',
-            'ticket' => $this->TicketModel->getTicket()
+            'ticket' => $this->TicketModel->getTicketStatus($status, $form)
         ];
 
         return view('pages/ticketApproval', $data);
