@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-08-10 11:41:47 --> syntax error, unexpected ')', expecting variable (T_VARIABLE)
 #0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\XIANGL...')
 #1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Tick...')
@@ -76,3 +77,202 @@ CRITICAL - 2022-08-10 12:53:05 --> Undefined variable: t
 #8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
 #10 {main}
+=======
+CRITICAL - 2022-08-10 08:28:04 --> session(): Argument #1 ($val) must be of type ?string, array given, called in C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Login.php on line 35
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Login.php(35): session(Array)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 08:31:52 --> Undefined property: App\Controllers\Login::$session
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\Sandoy...', 35)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 09:22:53 --> syntax error, unexpected token ")"
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Sandoy...')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Tick...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\BaseController.php(57): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Tick...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#8 {main}
+CRITICAL - 2022-08-10 09:29:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::join()
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Login.php(25): App\Models\AccountModel->getUsername('9876543210')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 09:29:29 --> Cannot use object of type App\Models\AccountModel as array
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#5 {main}
+CRITICAL - 2022-08-10 09:43:47 --> Call to a member function select() on null
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Login.php(25): App\Models\AccountModel->getUsername('9876543210')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 09:45:00 --> Call to a member function select() on null
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Login.php(25): App\Models\AccountModel->getUsername('9876543210')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 09:48:42 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#5 {main}
+ERROR - 2022-08-10 10:00:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':id_account GROUP BY status UNION SELECT 'HISTORY' AS STATUS, COUNT(STATUS) A...' at line 1
+CRITICAL - 2022-08-10 10:00:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':id_account GROUP BY status UNION SELECT 'HISTORY' AS STATUS, COUNT(STATUS) A...' at line 1
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT UPPER(ST...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT UPPER(ST...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT UPPER(ST...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\TicketModel.php(48): CodeIgniter\Database\BaseConnection->query('SELECT UPPER(ST...', Array)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(14): App\Models\TicketModel->getStatusTiket(Array)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#10 {main}
+CRITICAL - 2022-08-10 10:04:18 --> Unclosed '[' on line 51 does not match '}'
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Sandoy...')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Tick...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\BaseController.php(57): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Tick...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#8 {main}
+CRITICAL - 2022-08-10 10:04:28 --> syntax error, unexpected token "}"
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Sandoy...')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Tick...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\BaseController.php(57): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Tick...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#8 {main}
+CRITICAL - 2022-08-10 10:06:30 --> Undefined array key "count"
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Sandoy...', 16)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 10:06:36 --> Undefined array key "COUNT"
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Sandoy...', 16)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 10:26:33 --> Undefined array key "APPROVAL"
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Sandoy...', 16)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 10:27:12 --> Undefined array key "ready"
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Sandoy...', 16)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#6 {main}
+CRITICAL - 2022-08-10 10:29:58 --> Undefined variable $data
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Views\pages\ticketView.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Sandoy...', 22)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include('C:\\Users\\Sandoy...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketVie...', Array, true)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(17): view('pages/ticketVie...', Array)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->index()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#10 {main}
+CRITICAL - 2022-08-10 10:46:41 --> foreach() argument must be of type array|object, null given
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Views\pages\ticketList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\Users\\Sandoy...', 83)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include('C:\\Users\\Sandoy...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketLis...', Array, true)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(60): view('pages/ticketLis...', Array)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list('test')
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#10 {main}
+CRITICAL - 2022-08-10 10:47:36 --> Cannot access offset of type string on string
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include()
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketLis...', Array, true)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(60): view('pages/ticketLis...', Array)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list('New')
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#9 {main}
+CRITICAL - 2022-08-10 10:48:08 --> Cannot access offset of type string on string
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include()
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketLis...', Array, true)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(60): view('pages/ticketLis...', Array)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list('New')
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#9 {main}
+CRITICAL - 2022-08-10 10:48:13 --> Cannot access offset of type string on string
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include()
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketLis...', Array, true)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(60): view('pages/ticketLis...', Array)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list('APROVAL')
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#9 {main}
+CRITICAL - 2022-08-10 10:49:30 --> Cannot access offset of type string on string
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include()
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticketLis...', Array, true)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(60): view('pages/ticketLis...', Array)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->list('APROVAL')
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#9 {main}
+>>>>>>> branch-sandy-merge
