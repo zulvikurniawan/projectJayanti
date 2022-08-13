@@ -37,7 +37,7 @@
                <tr>
                     <td scope="row"><a href="/Ticket/Status/proses" style="text-decoration:none">Proses</a></td>
                     <td scope="row" class="text-end">
-                         <?= (array_key_exists('proses', $statusTicket)) ? $statusTicket['proses'] : '0'; ?>
+                         <?= (array_key_exists('PROSES', $statusTicket)) ? $statusTicket['PROSES'] : '0'; ?>
                     </td>
                </tr>
                <tr>

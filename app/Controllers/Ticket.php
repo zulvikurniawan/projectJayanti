@@ -142,9 +142,10 @@ class Ticket extends BaseController
     {
         $data = [
             'title' => 'PT. PANARUB | Ticket Detail',
-            'ticket' => $this->TicketModel->getTicket($id_ticket)
+            'ticket' => $this->TicketModel->getTicket($id_ticket),
+            'assignTo' => $this->AccountModel->getAssignTo()
         ];
-        // dd(session()->get());
+        // dd($data['assignTo']);
 
         return view('pages/ticketDetailAssign', $data);
     }
@@ -156,18 +157,16 @@ class Ticket extends BaseController
         $data = [
             'title' => 'Ticket Approval | Jayanti Program',
             'ticket' => $this->TicketModel->getTicketStatus($status, $form),
-            'assignTo' => $this->AccountModel->getAssignTo()
         ];
 
-        dd($data['assignTo']);
 
         return view('pages/ticketAssign', $data);
     }
 
-    public function assignSave($id)
+    public function assignSave()
     {
         $this->TicketModel->save([
-            'id_ticket' => $id,
+            'id_ticket' =>  $this->request->getPost('id'),
             'status' => 'proses',
             'id_assign' => $this->request->getPost('user')
         ]);

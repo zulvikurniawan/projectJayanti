@@ -7,7 +7,7 @@
             <h2>Assign Teknisi</h2>
         </div>
     </div>
-    <form action="/Ticket/assignSave" method="POST">
+    <form action="/Ticket/assignSave" method="POST" name="myForm" onsubmit="return validateForm()">
         <input type="hidden" name="id" value="<?= $ticket['id_ticket']; ?>">
         <div class="row mb-3">
             <div class="col-3 d-flex">
@@ -15,7 +15,7 @@
                 <select class="form-select form-select-sm text-center" aria-label="Default select example" id="user" name="user">
                     <option hidden selected value="">Select Teknisi</option>
                     <?php foreach ($assignTo as $a) : ?>
-                        <option value="<?= $a['user']; ?>"></option>
+                        <option value="<?= $a['id_account']; ?>"><?= $a['nama']; ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>
@@ -147,6 +147,16 @@
 
 //java skript
 <?= $this->section('javascript'); ?>
+<script>
+    function validateForm() {
+        let x = document.forms["myForm"]["user"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+</script>
+
 
 <?= $this->endSection(); ?>
 // akhir java skript
