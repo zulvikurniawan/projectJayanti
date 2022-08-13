@@ -1,0 +1,258 @@
+ERROR - 2022-08-13 00:15:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+CRITICAL - 2022-08-13 00:15:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\JabatanModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(41): App\Models\JabatanModel->getDivision()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+ERROR - 2022-08-13 00:15:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+CRITICAL - 2022-08-13 00:15:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\JabatanModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(41): App\Models\JabatanModel->getDivision()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+ERROR - 2022-08-13 00:16:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+CRITICAL - 2022-08-13 00:16:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\JabatanModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(41): App\Models\JabatanModel->getDivision()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+ERROR - 2022-08-13 00:16:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+CRITICAL - 2022-08-13 00:16:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:' at line 3
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\JabatanModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(41): App\Models\JabatanModel->getDivision()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+ERROR - 2022-08-13 00:18:20 --> Unknown column 'id_parent' in 'where clause'
+CRITICAL - 2022-08-13 00:18:20 --> Unknown column 'id_parent' in 'where clause'
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\JabatanModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(41): App\Models\JabatanModel->getDivision()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+CRITICAL - 2022-08-13 00:26:42 --> Call to undefined function set_select()
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include()
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountAd...', Array, true)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(52): view('pages/accountAd...', Array)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#9 {main}
+CRITICAL - 2022-08-13 00:27:10 --> Undefined array key "name"
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Views\pages\accountAdd.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Sandoy...', 59)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(210): include('C:\\Users\\Sandoy...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountAd...', Array, true)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(52): view('pages/accountAd...', Array)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#10 {main}
+CRITICAL - 2022-08-13 09:10:24 --> "yyyyMM" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('yyyyMM')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(51): CodeIgniter\I18n\Time::createFromFormat('yyyyMM', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:10:29 --> "yyyyM" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('yyyyM')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(51): CodeIgniter\I18n\Time::createFromFormat('yyyyM', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:10:33 --> "yyyy-M" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('yyyy-M')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(51): CodeIgniter\I18n\Time::createFromFormat('yyyy-M', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:10:40 --> "yy-M" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('yy-M')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(51): CodeIgniter\I18n\Time::createFromFormat('yy-M', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:11:02 --> "j-M" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(51): CodeIgniter\I18n\Time::createFromFormat('j-M', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:11:14 --> "j-M-Y" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(51): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:12:22 --> "j-M-Y" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(51): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:17:13 --> "j-M-Y" is not a valid datetime format
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(52): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', Object(CodeIgniter\I18n\Time))
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->accountAdd()
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#7 {main}
+CRITICAL - 2022-08-13 09:27:34 --> There is no data to update.
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(651): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Admin.php(159): CodeIgniter\Model->update(Array)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#9 {main}
+ERROR - 2022-08-13 10:16:48 --> Unknown table 'db_jayanti.account'
+CRITICAL - 2022-08-13 10:16:48 --> Unknown table 'db_jayanti.account'
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `account...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `account...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `account...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `account...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\TicketModel.php(88): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(99): App\Models\TicketModel->getTicketReport(Array)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->report()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+ERROR - 2022-08-13 10:17:11 --> Unknown column 'a.name' in 'field list'
+CRITICAL - 2022-08-13 10:17:11 --> Unknown column 'a.name' in 'field list'
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ticket`...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ticket`...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ticket`...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ticket`...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\TicketModel.php(88): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(99): App\Models\TicketModel->getTicketReport(Array)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->report()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+ERROR - 2022-08-13 10:17:47 --> Unknown column 'a.name' in 'field list'
+CRITICAL - 2022-08-13 10:17:47 --> Unknown column 'a.name' in 'field list'
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ticket`...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ticket`...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ticket`...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ticket`...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\TicketModel.php(88): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(99): App\Models\TicketModel->getTicketReport(Array)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->report()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}
+ERROR - 2022-08-13 10:19:58 --> Unknown column 'a.name' in 'field list'
+CRITICAL - 2022-08-13 10:19:58 --> Unknown column 'a.name' in 'field list'
+#0 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ticket`...', 0)
+#1 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ticket`...')
+#2 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ticket`...')
+#3 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ticket`...', Array, false)
+#4 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Sandoy\Documents\Git\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Models\TicketModel.php(88): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Sandoy\Documents\Git\projectJayanti\app\Controllers\Ticket.php(99): App\Models\TicketModel->getTicketReport(Array)
+#8 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Ticket->report()
+#9 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticket))
+#10 C:\Users\Sandoy\Documents\Git\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Sandoy\Documents\Git\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Sandoy\Documents\Git\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sandoy...')
+#13 {main}

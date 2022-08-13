@@ -17,14 +17,13 @@
 
           </div>
           <div class="col-3">
-               <input class="form-control form-control-sm mb-2" type="date">
-               <input class="form-control form-control-sm mb-2" type="date">
-               <select name="cars" id="cars" class="form-select">
-                    <option value="volvo" hidden disabled>Select Type</option>
-                    <option value="volvo">All</option>
-                    <option value="volvo">Software Problem</option>
-                    <option value="volvo">Hardware Problem</option>
-                    <option value="volvo">Network Problem</option>
+               <input class="form-control form-control-sm mb-2" type="date" name="fromDate">
+               <input class="form-control form-control-sm mb-2" type="date" name="toDate">
+               <select name="category" id="category" class="form-select">
+                    <option value="">All</option>
+                    <option value="Software Problem">Software Problem</option>
+                    <option value="Hardware Problem">Hardware Problem</option>
+                    <option value="Network Problem">Network Problem</option>
                </select>
           </div>
      </div>
@@ -53,38 +52,16 @@
                          </tr>
                     </thead>
                     <tbody>
-                         <!-- <tr>
-                              <td><a href="#" class="">170494</a></td>
-                              <td>30/07/2022</td>
-                              <td>Lasman</td>
-                              <td>Zulvi</td>
-                              <td>Close</td>
-                              <td> Network Problem</td>
-                         </tr> -->
-                         <!-- <tr>
-                              <td><a href="#" class="">170495</a></td>
-                              <td>02/08/2022</td>
-                              <td>Tiani</td>
-                              <td>Zulvi</td>
-                              <td>Close</td>
-                              <td> Hardware Problem</td>
-                         </tr> -->
+                         <?php foreach ($ticket as $t) : ?>
                          <tr>
-                              <td><a href="#" class="">170496</a></td>
-                              <td>02/08/2022</td>
+                              <td><a href="#" class=""><?= $t['id_ticket']; ?></a></td>
+                              <td><?= $t['created_at']; ?></td>
                               <td>Sandy</td>
                               <td>Zulvi</td>
                               <td>Close</td>
                               <td> Software Problem</td>
                          </tr>
-                         <!-- <tr>
-                              <td><a href="#" class="">170497</a></td>
-                              <td>03/08/2022</td>
-                              <td>Tiani</td>
-                              <td>Zulvi</td>
-                              <td>Close</td>
-                              <td> Network Problem</td>
-                         </tr> -->
+                         <?php endforeach; ?>
                     </tbody>
                     <tfoot>
                          <tr>
@@ -130,15 +107,15 @@
 <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js"></script>
 
 <script>
-     $(document).ready(function() {
-          var table = $('#tableTicketList').DataTable({
-               lengthChange: false,
-               buttons: ['print']
-          });
-
-          table.buttons().container()
-               .appendTo('#tableTicketList_wrapper .col-md-6:eq(0)');
+$(document).ready(function() {
+     var table = $('#tableTicketList').DataTable({
+          lengthChange: false,
+          buttons: ['print']
      });
+
+     table.buttons().container()
+          .appendTo('#tableTicketList_wrapper .col-md-6:eq(0)');
+});
 </script>
 
 

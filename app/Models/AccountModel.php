@@ -14,7 +14,7 @@ class AccountModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nik', 'password', 'nama', 'jenis_kelamin', 'tempat_lahir', 'tanggal_lahir', 'email', 'nomor_hp', 'tanggal_bergabung', 'foto_profil'];
+    protected $allowedFields = ['nik', 'password', 'nama', 'jenis_kelamin', 'tempat_lahir', 'tanggal_lahir', 'email', 'nomor_hp', 'tanggal_bergabung', 'foto_profil', 'id_jabatan'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

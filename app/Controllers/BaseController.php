@@ -12,6 +12,7 @@ use Psr\Log\LoggerInterface;
 //jika memakai BaseController namespase berada di sini
 use \App\Models\AccountModel;
 use \App\Models\TicketModel;
+use \App\Models\JabatanModel;
 
 /**
  * Class BaseController
@@ -39,7 +40,7 @@ class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = ['array'];
+    protected $helpers = ['array', 'form'];
 
     /**
      * Constructor.
@@ -55,5 +56,6 @@ class BaseController extends Controller
         $this->session = \Config\Services::session();
         $this->AccountModel = new AccountModel();
         $this->TicketModel = new TicketModel();
+        $this->JabatanModel = new JabatanModel();
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\HTTP\Request;
+use CodeIgniter\I18n\Time;
 
 // jika memakai contsruct
 // use App\Models\AccountModel;
@@ -10,6 +11,7 @@ use CodeIgniter\HTTP\Request;
 class Admin extends BaseController
 {
     protected $AccountModel;
+    protected $JabatanModel;
 
     public function index()
     {
@@ -34,50 +36,43 @@ class Admin extends BaseController
 
     public function accountAdd()
     {
+        $form = $this->request->getPost();
+        if (session()->getFlashdata('_ci_old_input') != null) {
+            $oldRequest = session()->getFlashdata('_ci_old_input');
+            $form = $oldRequest['post'];
+        };
+        $jabatan = [];
+        if (array_key_exists('divisi', $form)) {
+            $jabatan = $this->JabatanModel->getJabatan($form['divisi']);
+        }
+
         $data = [
             'title' => 'PT. PANARUB | Add Account',
-            'validation' => \config\Services::validation()
+            'validation' => \config\Services::validation(),
+            'divisi' => $this->JabatanModel->getDivision(),
+            'jabatan' => $jabatan
         ];
+        // dd($data['divisi']);
+
 
         return view('pages/accountAdd', $data);
     }
 
     public function save()
     {
+        $form = $this->request->getPost();
+        if ($form['subaction'] == '' || $form['subaction'] != 'simpan') {
+            return redirect()->to('/admin/accountAdd')->withInput();
+        }
+        // dd($form);
         //validasi create account
         if (!$this->validate([
-            'nik' => [
-                'rules' => 'required|is_unique[account.nik]|max_length[10]|min_length[10]',
-                'errors' => [
-                    'required' => 'ID harus diisi.',
-                    'is_unique' => 'ID sudah terdaftar.',
-                    'max_length' => 'ID Tidak Sesuai',
-                    'min_length' => 'ID Tidak sesuai'
-                ]
-            ],
-
             'nama' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Nama harus diisi.',
                 ]
             ],
-
-            'password' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Password harus diisi.'
-                ]
-            ],
-
-            // validasi jenis kelamin belum bisa
-            // 'jenis_kelamin' => [
-            //     'rules' => 'required',
-            //     'errors' => [
-            //         'required' => 'Jenis Kelamin harus diisi.',
-            //     ]
-            // ],
-
             'tempat_lahir' => [
                 'rules' => 'required',
                 'errors' => [
@@ -105,6 +100,24 @@ class Admin extends BaseController
                     'required' => 'Nomor hp harus diisi.',
                 ]
             ],
+            'divisi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Divisi harus diisi.',
+                ]
+            ],
+            'jabatan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Jabatan harus diisi.',
+                ]
+            ],
+            'jenis_kelamin' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Jenis Kelamin harus dipilih.',
+                ]
+            ],
 
             'tanggal_bergabung' => [
                 'rules' => 'required',
@@ -118,17 +131,32 @@ class Admin extends BaseController
             return redirect()->to('/admin/accountAdd')->withInput()->with('validation', $validation);
         }
 
+
+
         $this->AccountModel->save([
-            'nik' => $this->request->getVar('nik'),
             'nama' => $this->request->getVar('nama'),
-            'password' => $this->request->getVar('password'),
+            'password' => 'Test1234!',
             'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
             'tempat_lahir' => $this->request->getVar('tempat_lahir'),
             'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
             'email' => $this->request->getVar('email'),
             'nomor_hp' => $this->request->getVar('nomor_hp'),
             'tanggal_bergabung' => $this->request->getVar('tanggal_bergabung'),
-            'foto_profil' => $this->request->getVar('foto_profil')
+            'foto_profil' => 'fotoProfil.jpg'
+        ]);
+
+        $id = $this->AccountModel->getInsertID();
+
+        $time = Time::today();
+        $year = $time->getYear() * 100;
+        $month = $time->getMonth();
+        $nik = $year + $month;
+        $nik = $nik * 10000;
+        $nik = $nik + $id;
+
+        $this->AccountModel->save([
+            'id_account' => $id,
+            'nik' => $nik
         ]);
 
         session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');

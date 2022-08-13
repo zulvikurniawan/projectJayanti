@@ -53,6 +53,7 @@ class TicketModel extends Model
         }
         $data = [];
         (array_key_exists('status', $ticketStatus) && $ticketStatus['status'] != "") ? $data['status'] = $ticketStatus['status'] : '';
+        (array_key_exists('category', $ticketStatus) && $ticketStatus['category'] != "") ? $data['category'] = $ticketStatus['category'] : '';
         (array_key_exists('fromDate', $ticketStatus) && $ticketStatus['fromDate'] != "") ? $data['created_at >'] = $ticketStatus['fromDate'] : '';
         (array_key_exists('toDate', $ticketStatus) && $ticketStatus['toDate'] != "") ? $data['created_at <'] = $ticketStatus['toDate'] : '';
         return $this->where($data)->findAll();
@@ -75,5 +76,22 @@ class TicketModel extends Model
             $data = ['id_account' => $user['id_account']];
         }
         return $this->db->query($sql, $data)->getResultArray();
+    }
+
+    public function getTicketReport($form)
+    {
+        if (empty($form)) {
+            return $this
+                ->select('ticket.*,a.nama as create_by,aa.nama as assign_to')
+                ->join('account as a', 'a.id_account = ticket.id_account', 'left')
+                ->join('account as aa', 'aa.id_account = ticket.id_assign', 'left')
+                ->findAll();
+        }
+        $data = [];
+        (array_key_exists('status', $form) && $form['status'] != "") ? $data['status'] = $form['status'] : '';
+        (array_key_exists('category', $form) && $form['category'] != "") ? $data['category'] = $form['category'] : '';
+        (array_key_exists('fromDate', $form) && $form['fromDate'] != "") ? $data['created_at >'] = $form['fromDate'] : '';
+        (array_key_exists('toDate', $form) && $form['toDate'] != "") ? $data['created_at <'] = $form['toDate'] : '';
+        return $this->where($data)->findAll();
     }
 }

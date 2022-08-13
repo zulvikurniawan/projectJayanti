@@ -14,7 +14,7 @@ class Ticket extends BaseController
     {
         $form = $this->request->getPost();
         $data = [
-            'title' => 'Ticket Status | Jayanti Program',
+            'title' => 'PT. PANARUB | Ticket Status',
             'statusTicket' => array_column($this->TicketModel->getStatusTiket(session()->get('user'), $form), 'COUNT', 'status')
         ];
         // dd($data['statusTicket']);
@@ -59,7 +59,7 @@ class Ticket extends BaseController
     {
         $form = $this->request->getPost();
         $data = [
-            'title' => 'Ticket List | Jayanti Program',
+            'title' => 'PT. PANARUB | Ticket List',
             'ticket' => $this->TicketModel->getTicketStatus($status, $form),
             'status' => $status
         ];
@@ -82,7 +82,7 @@ class Ticket extends BaseController
     {
         $status = $this->request->getPost();
         $data = [
-            'title' => 'Ticket History | Jayanti Program',
+            'title' => 'PT. PANARUB | Ticket History',
             'status' => $status,
             'ticket' => $this->TicketModel->getTicketStatusForm($status)
         ];
@@ -91,10 +91,15 @@ class Ticket extends BaseController
 
     public function report()
     {
+        $form = $this->request->getPost();
+
         $data = [
-            'title' => 'PT. PANARUB | Report'
+            'title' => 'PT. PANARUB | Report',
+            'form' => $form,
+            'ticket' => $this->TicketModel->getTicketReport($form)
         ];
 
+        dd($data['ticket']);
         return view('pages/ticketReport', $data);
     }
     public function approval()
@@ -102,7 +107,7 @@ class Ticket extends BaseController
         $form = [];
         $status = 'NEW';
         $data = [
-            'title' => 'Ticket Approval | Jayanti Program',
+            'title' => 'PT. PANARUB | Ticket Approval',
             'ticket' => $this->TicketModel->getTicketStatus($status, $form)
         ];
 
@@ -155,7 +160,7 @@ class Ticket extends BaseController
         $form = [];
         $status = 'approve';
         $data = [
-            'title' => 'Ticket Approval | Jayanti Program',
+            'title' => 'Ticket Approval  ',
             'ticket' => $this->TicketModel->getTicketStatus($status, $form),
         ];
 
