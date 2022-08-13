@@ -118,7 +118,10 @@
      </div>
      <div class="row mb-4 text-end me-5">
           <div class="col">
-               <a href="/Ticket" type="button" class="btn btn-secondary">Back</a>
+               <form action="/Ticket/detail/<?= $ticket['id_ticket']; ?>" method="post" onsubmit="subactionBack()" name="myForm" id="myForm">
+                    <input type="hidden" name="subaction" value="">
+                    <button type="submit" class="btn btn-secondary">Back</button>
+               </form>
           </div>
      </div>
 </div>
@@ -126,6 +129,12 @@
 
 //java skript
 <?= $this->section('javascript'); ?>
+<script>
+     function subactionBack() {
+          document.forms['myForm'].subaction.value = 'back';
+          document.forms['myForm'].submit;
+     }
+</script>
 
 <?= $this->endSection(); ?>
 // akhir java skript

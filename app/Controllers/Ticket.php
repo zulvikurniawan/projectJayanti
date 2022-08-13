@@ -69,6 +69,9 @@ class Ticket extends BaseController
 
     public function detail($id_ticket)
     {
+        if ($this->request->getPost('subaction') == 'backhistory') {
+            return redirect()->to('/Ticket/history');
+        }
         $data = [
             'title' => 'PT. PANARUB | Ticket Detail',
             'ticket' => $this->TicketModel->getTicket($id_ticket)
@@ -93,13 +96,18 @@ class Ticket extends BaseController
     {
         $form = $this->request->getPost();
 
+        $ticket = $this->TicketModel->getTicketReport($form);
+        $ticketCount = count($ticket);
+
         $data = [
             'title' => 'PT. PANARUB | Report',
             'form' => $form,
-            'ticket' => $this->TicketModel->getTicketReport($form)
+            'ticket' => $ticket,
+            'totalData' => $ticketCount
         ];
+        // dd($data['ticket']);
 
-        dd($data['ticket']);
+        // dd($data['ticket']);
         return view('pages/ticketReport', $data);
     }
     public function approval()

@@ -9,33 +9,34 @@
                <hr>
           </div>
      </div>
-     <div class="row mb-2">
-          <div class="col-2">
-               <h5 class="mb-3">From Date</h5>
-               <h5 class="mb-3">Until Date</h5>
-               <h5 class="mb-3">Category</h5>
-
+     <form action="/Ticket/report" method="post">
+          <div class="row mb-2">
+               <div class="col-2">
+                    <h5 class="mb-3">From Date</h5>
+                    <h5 class="mb-3">Until Date</h5>
+                    <h5 class="mb-3">Category</h5>
+               </div>
+               <div class="col-3">
+                    <input class="form-control form-control-sm mb-2" type="date" name="fromDate">
+                    <input class="form-control form-control-sm mb-2" type="date" name="toDate">
+                    <select name="category" id="category" class="form-select">
+                         <option value="">All</option>
+                         <option value="Software Problem">Software Problem</option>
+                         <option value="Hardware Problem">Hardware Problem</option>
+                         <option value="Network Problem">Network Problem</option>
+                    </select>
+               </div>
           </div>
-          <div class="col-3">
-               <input class="form-control form-control-sm mb-2" type="date" name="fromDate">
-               <input class="form-control form-control-sm mb-2" type="date" name="toDate">
-               <select name="category" id="category" class="form-select">
-                    <option value="">All</option>
-                    <option value="Software Problem">Software Problem</option>
-                    <option value="Hardware Problem">Hardware Problem</option>
-                    <option value="Network Problem">Network Problem</option>
-               </select>
+          <div class="row mb-3" style="margin-left:203px;">
+               <div class="col">
+                    <button class="btn btn-sm btn-primary">Search</button>
+               </div>
           </div>
-     </div>
-     <div class="row mb-3" style="margin-left:203px;">
-          <div class="col">
-               <button class="btn btn-sm btn-primary" href="#">Search</button>
-          </div>
-     </div>
+     </form>
      <hr>
      <div class="row">
           <div class="col text-center">
-               <h6>Total Data : 1</h6>
+               <h6>Total Data : <?= $totalData; ?></h6>
           </div>
      </div>
      <div class="row">
@@ -53,14 +54,14 @@
                     </thead>
                     <tbody>
                          <?php foreach ($ticket as $t) : ?>
-                         <tr>
-                              <td><a href="#" class=""><?= $t['id_ticket']; ?></a></td>
-                              <td><?= $t['created_at']; ?></td>
-                              <td>Sandy</td>
-                              <td>Zulvi</td>
-                              <td>Close</td>
-                              <td> Software Problem</td>
-                         </tr>
+                              <tr>
+                                   <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>" class=""><?= $t['id_ticket']; ?></a></td>
+                                   <td><?= $t['created_at']; ?></td>
+                                   <td><?= $t['create_by']; ?></td>
+                                   <td><?= $t['assign_to']; ?></td>
+                                   <td><?= $t['status']; ?></td>
+                                   <td><?= $t['category']; ?></td>
+                              </tr>
                          <?php endforeach; ?>
                     </tbody>
                     <tfoot>
@@ -107,15 +108,15 @@
 <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js"></script>
 
 <script>
-$(document).ready(function() {
-     var table = $('#tableTicketList').DataTable({
-          lengthChange: false,
-          buttons: ['print']
-     });
+     $(document).ready(function() {
+          var table = $('#tableTicketList').DataTable({
+               lengthChange: false,
+               buttons: ['print']
+          });
 
-     table.buttons().container()
-          .appendTo('#tableTicketList_wrapper .col-md-6:eq(0)');
-});
+          table.buttons().container()
+               .appendTo('#tableTicketList_wrapper .col-md-6:eq(0)');
+     });
 </script>
 
 

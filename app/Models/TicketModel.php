@@ -90,8 +90,14 @@ class TicketModel extends Model
         $data = [];
         (array_key_exists('status', $form) && $form['status'] != "") ? $data['status'] = $form['status'] : '';
         (array_key_exists('category', $form) && $form['category'] != "") ? $data['category'] = $form['category'] : '';
-        (array_key_exists('fromDate', $form) && $form['fromDate'] != "") ? $data['created_at >'] = $form['fromDate'] : '';
-        (array_key_exists('toDate', $form) && $form['toDate'] != "") ? $data['created_at <'] = $form['toDate'] : '';
-        return $this->where($data)->findAll();
+        (array_key_exists('fromDate', $form) && $form['fromDate'] != "") ? $data['ticket.created_at >'] = $form['fromDate'] : '';
+        (array_key_exists('toDate', $form) && $form['toDate'] != "") ? $data['ticket.created_at <'] = $form['toDate'] : '';
+
+        return $this
+            ->select('ticket.*,a.nama as create_by,aa.nama as assign_to')
+            ->join('account as a', 'a.id_account = ticket.id_account', 'left')
+            ->join('account as aa', 'aa.id_account = ticket.id_assign', 'left')
+            ->where($data)
+            ->findAll();
     }
 }
