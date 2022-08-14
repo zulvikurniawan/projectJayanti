@@ -46,6 +46,17 @@ class Ticket extends BaseController
         return view('pages/ticketDetail', $data);
     }
 
+    public function chatproses($id)
+    {
+
+        $data = [
+            'title' => 'PT. PANARUB | Ticket',
+            'ticket' => $this->TicketModel->getTicket($id),
+        ];
+
+        return view('pages/chatProses', $data);
+    }
+
     public function history()
     {
         $status = $this->request->getPost();

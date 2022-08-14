@@ -73,7 +73,12 @@
                               <td><?= $t['category']; ?></td>
                               <td><?= $t['title']; ?></td>
                               <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>"
-                                        class="btn btn-sm btn-warning">Detail</a></td>
+                                        class="btn btn-sm btn-warning">Detail</a>
+                                   <?php if ($t['status'] == 'proses') : ?>
+                                   <a href="/ticket/chatproses/<?= $t['id_ticket']; ?>"
+                                        class="btn btn-sm btn-primary">chat</a>
+                                   <?php endif; ?>
+                              </td>
 
                          </tr>
                          <?php endforeach; ?>

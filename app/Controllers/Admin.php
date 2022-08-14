@@ -137,6 +137,7 @@ class Admin extends BaseController
             'nama' => $this->request->getVar('nama'),
             'password' => 'Test1234!',
             'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
+            'id_jabatan' => $this->request->getVar('jabatan'),
             'tempat_lahir' => $this->request->getVar('tempat_lahir'),
             'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
             'email' => $this->request->getVar('email'),
