@@ -37,6 +37,10 @@ $routes->get('/Ticket/list/(:num)', 'Ticket::detail/$1');
 $routes->get('/Ticket/Status/(:alpha)', 'Ticket::list/$1');
 $routes->post('/Ticket/Status/(:alpha)', 'Ticket::list/$1');
 
+//ticket solved
+$routes->get('/Ticket/solved', 'Ticket::solvenList');
+
+
 $routes->get('/Admin/edit/(:num)', 'Admin::edit/$1');
 $routes->get('/Admin/delete/(:num)', 'Admin::delete/$1');
 $routes->get('/Admin/(:num)', 'Admin::detail/$1');

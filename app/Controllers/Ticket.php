@@ -10,6 +10,8 @@ class Ticket extends BaseController
     protected $TicketModel;
     protected $AccountModel;
 
+    //ticket status start 
+
     public function index()
     {
         $form = $this->request->getPost();
@@ -21,6 +23,52 @@ class Ticket extends BaseController
         // dd(array_key_exists('APROVAL', $data['statusTicket']));
         return view('pages/ticketView', $data);
     }
+
+    public function list($status)
+    {
+        $form = $this->request->getPost();
+        $data = [
+            'title' => 'PT. PANARUB | Ticket List',
+            'ticket' => $this->TicketModel->getTicketStatus($status, $form),
+            'status' => $status
+        ];
+
+        return view('pages/ticketList', $data);
+    }
+
+    public function detail($id_ticket)
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket Detail',
+            'ticket' => $this->TicketModel->getTicket($id_ticket)
+        ];
+
+        return view('pages/ticketDetail', $data);
+    }
+
+    public function history()
+    {
+        $status = $this->request->getPost();
+        $data = [
+            'title' => 'PT. PANARUB | Ticket History',
+            'status' => $status,
+            'ticket' => $this->TicketModel->getTicketStatusForm($status)
+        ];
+        return view('pages/ticketHistory', $data);
+    }
+
+    public function detailhistory($id_ticket)
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket Detail',
+            'ticket' => $this->TicketModel->getTicket($id_ticket)
+        ];
+
+        return view('pages/ticketDetailHistory', $data);
+    }
+
+    //ticket status end 
+    //ticket create start
 
     public function create()
     {
@@ -55,42 +103,8 @@ class Ticket extends BaseController
         return redirect()->to('/Ticket/list');
     }
 
-    public function list($status)
-    {
-        $form = $this->request->getPost();
-        $data = [
-            'title' => 'PT. PANARUB | Ticket List',
-            'ticket' => $this->TicketModel->getTicketStatus($status, $form),
-            'status' => $status
-        ];
-
-        return view('pages/ticketList', $data);
-    }
-
-    public function detail($id_ticket)
-    {
-        if ($this->request->getPost('subaction') == 'backhistory') {
-            return redirect()->to('/Ticket/history');
-        }
-        $data = [
-            'title' => 'PT. PANARUB | Ticket Detail',
-            'ticket' => $this->TicketModel->getTicket($id_ticket)
-        ];
-        // dd(session()->get());
-
-        return view('pages/ticketDetail', $data);
-    }
-
-    public function history()
-    {
-        $status = $this->request->getPost();
-        $data = [
-            'title' => 'PT. PANARUB | Ticket History',
-            'status' => $status,
-            'ticket' => $this->TicketModel->getTicketStatusForm($status)
-        ];
-        return view('pages/ticketHistory', $data);
-    }
+    //ticket create end
+    //ticket report start
 
     public function report()
     {
@@ -105,11 +119,22 @@ class Ticket extends BaseController
             'ticket' => $ticket,
             'totalData' => $ticketCount
         ];
-        // dd($data['ticket']);
-
-        // dd($data['ticket']);
         return view('pages/ticketReport', $data);
     }
+
+    public function detailreport($id_ticket)
+    {
+
+        $data = [
+            'title' => 'PT. PANARUB | Ticket Detail',
+            'ticket' => $this->TicketModel->getTicket($id_ticket)
+        ];
+
+        return view('pages/ticketDetailReport', $data);
+    }
+
+    //ticket report end
+    //ticket approval start
     public function approval()
     {
         $form = [];
@@ -142,14 +167,8 @@ class Ticket extends BaseController
         return redirect()->to('/Ticket/approval');
     }
 
-    public function chat()
-    {
-        $data = [
-            'title' => 'PT. PANARUB | Ticket'
-        ];
-
-        return view('pages/chat', $data);
-    }
+    //ticket approval end
+    //ticket assign start
 
     public function detailAssign($id_ticket)
     {
@@ -168,7 +187,7 @@ class Ticket extends BaseController
         $form = [];
         $status = 'approve';
         $data = [
-            'title' => 'Ticket Approval  ',
+            'title' => 'PT. PANARUB | Ticket Approval',
             'ticket' => $this->TicketModel->getTicketStatus($status, $form),
         ];
 
@@ -186,4 +205,61 @@ class Ticket extends BaseController
         session()->setFlashdata('tambahData', 'Data berhasil diassign.');
         return redirect()->to('/Ticket/approval');
     }
+
+    //ticket assign end
+    //ticket solved start
+
+    public function solvenList()
+    {
+        $form = $this->request->getPost();
+
+        (!array_key_exists('status', $form)) ? $form['status'] = 'proses' : '';
+
+        $ticketList = $this->TicketModel->getTicketStatusForm($form);
+
+        $data = [
+            'title' => 'PT. PANARUB | Ticket Solved List',
+            'ticket' => $ticketList,
+        ];
+        // dd($data['ticket']);
+
+        return view('pages/ticketlistSolved', $data);
+    }
+
+    public function detailsolved($id)
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket Detail',
+            'ticket' => $this->TicketModel->getTicket($id),
+        ];
+        // dd($data['assignTo']);
+
+        return view('pages/ticketDetailSolved', $data);
+    }
+
+    public function chat($id)
+    {
+
+        $data = [
+            'title' => 'PT. PANARUB | Ticket',
+            'ticket' => $this->TicketModel->getTicket($id),
+        ];
+
+        return view('pages/chatSolved', $data);
+    }
+
+    public function done()
+    {
+        $form = $this->request->getPost();
+
+        $this->TicketModel->save([
+            'id_ticket' => $form['id_ticket'],
+            'status' => 'solved',
+        ]);
+        session()->setFlashdata('success', 'Data berhasil disolved.');
+        return redirect()->to('/Ticket/solved');
+    }
+
+    //ticket solved end
+
 }

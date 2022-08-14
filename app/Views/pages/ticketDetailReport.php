@@ -118,7 +118,7 @@
      </div>
      <div class="row mb-4 text-end me-5">
           <div class="col">
-               <a href="/Ticket" class="btn btn-secondary">Back</a>
+               <a href="/Ticket/report" class="btn btn-secondary">Back</a>
           </div>
      </div>
 </div>

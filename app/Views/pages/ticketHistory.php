@@ -76,7 +76,7 @@
                               <td><?= $t['priority']; ?></td>
                               <td><?= $t['category']; ?></td>
                               <td><?= $t['title']; ?></td>
-                              <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>"
+                              <td><a href="/ticket/detailhistory/<?= $t['id_ticket']; ?>"
                                         class="btn btn-sm btn-warning">Detail</a></td>
                          </tr>
                          <?php endforeach; ?>

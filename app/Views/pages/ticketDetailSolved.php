@@ -2,7 +2,23 @@
 
 <?= $this->section('content'); ?>
 <div class="container bg-white mt-3 shadow">
-     <div class="row pb-2 border-bottom border-2 border-dark mb-3">
+     <div class="row">
+          <div class="col">
+               <h2>Assign Teknisi</h2>
+          </div>
+     </div>
+
+     <div class="row">
+          <div class="col">
+               <a href="/Ticket/chat/<?= $ticket['id_ticket']; ?>" type="button" class="btn btn-primary">Chat</a>
+               <a href="/Ticket/solved" type="button" class="btn btn-secondary">Back</a>
+          </div>
+
+     </div>
+
+     <hr class="my-2">
+
+     <div class="row pb-2 border-bottom border-1 border-dark my-3">
           <div class="col-4">
                <label class="fw-bold">Describe the incident or request</label>
           </div>
@@ -116,16 +132,20 @@
                <label for="Email" class="col-sm-2 col-form-label fw-bold text-end"><?= $ticket['ext']; ?></label>
           </div>
      </div>
-     <div class="row mb-4 text-end me-5">
-          <div class="col">
-               <a href="/Ticket" class="btn btn-secondary">Back</a>
-          </div>
-     </div>
 </div>
 <?= $this->endSection(); ?>
 
 //java skript
 <?= $this->section('javascript'); ?>
+<script>
+function validateForm() {
+     let x = document.forms["myForm"]["user"].value;
+     if (x == "") {
+          alert("Name must be filled out");
+          return false;
+     }
+}
+</script>
 
 
 <?= $this->endSection(); ?>

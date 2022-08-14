@@ -5,8 +5,14 @@
 <div class="container bg-white mt-3 shadow">
      <div class="row">
           <div class="col text-center">
-               <h3>Report</h3>
+               <h3>Solved List</h3>
                <hr>
+               <?php if (session()->getFlashdata('success')) : ?>
+               <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('success'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+               </div>
+               <?php endif; ?>
           </div>
      </div>
      <form action="/Ticket/report" method="post">
@@ -35,33 +41,31 @@
      </form>
      <hr>
      <div class="row">
-          <div class="col text-center">
-               <h6>Total Data : <?= $totalData; ?></h6>
-          </div>
-     </div>
-     <div class="row">
           <div class="col scrollTable" style="overflow-x: auto">
                <table id="tableTicketList" class="table table-striped table-hover" style="width:100%">
                     <thead>
                          <tr>
                               <th class="text-nowrap">ID.</th>
                               <th class="text-nowrap">Date</th>
-                              <th class="text-nowrap">Name Request</th>
-                              <th class="text-nowrap">Name Solved</th>
-                              <th class="text-nowrap">Final Status</th>
+                              <th class="text-nowrap">Status</th>
+                              <th class="text-nowrap">Priority</th>
                               <th class="text-nowrap">Category</th>
+                              <th class="text-nowrap">Title</th>
+                              <th class="text-nowrap">action</th>
                          </tr>
                     </thead>
                     <tbody>
                          <?php foreach ($ticket as $t) : ?>
                          <tr>
-                              <td><a href="/ticket/detailreport/<?= $t['id_ticket']; ?>"
-                                        class=""><?= $t['id_ticket']; ?></a></td>
+                              <td><?= $t['id_ticket']; ?></td>
                               <td><?= $t['created_at']; ?></td>
-                              <td><?= $t['create_by']; ?></td>
-                              <td><?= $t['assign_to']; ?></td>
                               <td><?= $t['status']; ?></td>
+                              <td><?= $t['priority']; ?></td>
                               <td><?= $t['category']; ?></td>
+                              <td><?= $t['title']; ?></td>
+                              <td><a href="/ticket/detailsolved/<?= $t['id_ticket']; ?>"
+                                        class="btn btn-sm btn-warning">Detail</a></td>
+
                          </tr>
                          <?php endforeach; ?>
                     </tbody>
@@ -69,19 +73,12 @@
                          <tr>
                               <th class="text-nowrap">ID.</th>
                               <th class="text-nowrap">Date</th>
-                              <th class="text-nowrap">Name Request</th>
-                              <th class="text-nowrap">Name Solved</th>
-                              <th class="text-nowrap">Final Status</th>
+                              <th class="text-nowrap">Status</th>
+                              <th class="text-nowrap">Priority</th>
                               <th class="text-nowrap">Category</th>
-                              <!-- <th>Opening Date</th>
-                        <th>Last Update</th>
-                        <th>Plugins-Info-Ext.</th>
-                        <th>Requester-Requester</th>
-                        <th>Assigned To - Technician</th>
-                        <th>Satisfaction Survey - Satisfaction</th>
-                        <th>Plugins Info - Ip Address</th>
-                        <th>Resolution Date</th>
-                        <th>Description</th> -->
+                              <th class="text-nowrap">Title</th>
+                              <th class="text-nowrap">action</th>
+
                          </tr>
                     </tfoot>
                </table>

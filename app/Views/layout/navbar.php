@@ -12,19 +12,22 @@
                          <a class="nav-link" aria-current="page" href="/Home">Home</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="/ticket/create">Create Ticket</a>
+                         <a class="nav-link" href="/Ticket/create">Create Ticket</a>
                     </li>
                     <li class="nav-item">
                          <a class="nav-link" href="/Ticket">Status Ticket</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="/ticket/approval">Ticket Approval</a>
+                         <a class="nav-link" href="/Ticket/approval">Ticket Approval</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="/ticket/assign">Assign Ticket</a>
+                         <a class="nav-link" href="/Ticket/assign">Assign Ticket</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="/ticket/report">Report</a>
+                         <a class="nav-link" href="/Ticket/solved">Solved Ticket</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="/Ticket/report">Report</a>
                     </li>
                     <li class="nav-item">
                          <a class="nav-link" href="/Admin">Admin</a>
