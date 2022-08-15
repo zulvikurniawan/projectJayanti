@@ -84,7 +84,8 @@ class Ticket extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'PT. PANARUB | Create Ticket'
+            'title' => 'PT. PANARUB | Create Ticket',
+            'head' => $this->AccountModel->getAtasan(session()->get('user'))
         ];
 
         return view('pages/createTicketView', $data);

@@ -40,7 +40,7 @@ class AccountModel extends Model
             return session()->setFlashdata('error', 'Username Tidak Boleh Kosong.');
         }
         return $this
-            ->select('account.*,j.nama as nama_jabatan,j.id_parent as id_parent')
+            ->select('account.*,j.nama as nama_jabatan,j.id_parent as id_parent,j.id_head as id_head')
             ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
             ->where(['nik' => $username])
             ->first();
@@ -53,5 +53,27 @@ class AccountModel extends Model
             ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
             ->where(['j.id_jabatan' => '2'])
             ->findAll();
+    }
+
+    public function getAtasan($user)
+    {
+        $command = '';
+        if ($user['id_jabatan'] == 1) {
+
+            $command = $this
+                ->select('account.*,j.nama as nama_jabatan,j.id_parent as id_parent')
+                ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+                ->findAll();
+        } else {
+
+            $command = $this
+                ->select('account.*,j.nama as nama_jabatan,j.id_parent as id_parent')
+                ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+                ->where(['account.id_jabatan' => $user['id_head']])
+                ->findAll();
+        }
+
+
+        return $command;
     }
 }
