@@ -92,12 +92,13 @@ class Ticket extends BaseController
 
     public function save()
     {
+        // dd($this->request->getVar());
         $this->TicketModel->save([
             'status' => 'new',
             'type' => $this->request->getVar('type'),
             'category' => $this->request->getVar('category'),
             'priority' => $this->request->getVar('priority'),
-            'urgency' => $this->request->getVar('urgency'),
+            // 'urgency' => $this->request->getVar('urgency'),
             'email_followup' => $this->request->getVar('tempat_lahir'),
             'my_device' => $this->request->getVar('my_device'),
             'location' => $this->request->getVar('location'),
@@ -111,7 +112,7 @@ class Ticket extends BaseController
 
 
         session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');
-        return redirect()->to('/Ticket/list');
+        return redirect()->to('/Ticket/Status/New');
     }
 
     //ticket create end
@@ -125,7 +126,7 @@ class Ticket extends BaseController
         $ticketCount = count($ticket);
 
         $data = [
-            'title' => 'PT. PANARUB | Report',
+            'title' => 'IT Service Report - PT. Panarub Industry',
             'form' => $form,
             'ticket' => $ticket,
             'totalData' => $ticketCount

@@ -60,10 +60,10 @@ class Admin extends BaseController
 
     public function save()
     {
-        $form = $this->request->getPost();
-        if ($form['subaction'] == '' || $form['subaction'] != 'simpan') {
-            return redirect()->to('/admin/accountAdd')->withInput();
-        }
+        // $form = $this->request->getPost();
+        // if ($form['subaction'] == '' || $form['subaction'] != 'simpan') {
+        //     return redirect()->to('/admin/accountAdd')->withInput();
+        // }
         // dd($form);
         //validasi create account
         if (!$this->validate([
@@ -134,8 +134,10 @@ class Admin extends BaseController
 
 
         $this->AccountModel->save([
+
+            'nik' => $this->request->getVar('nik'),
             'nama' => $this->request->getVar('nama'),
-            'password' => 'Test1234!',
+            'password' => $this->request->getVar('password'),
             'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
             'id_jabatan' => $this->request->getVar('jabatan'),
             'tempat_lahir' => $this->request->getVar('tempat_lahir'),
@@ -148,17 +150,17 @@ class Admin extends BaseController
 
         $id = $this->AccountModel->getInsertID();
 
-        $time = Time::today();
-        $year = $time->getYear() * 100;
-        $month = $time->getMonth();
-        $nik = $year + $month;
-        $nik = $nik * 10000;
-        $nik = $nik + $id;
+        // $time = Time::today();
+        // $year = $time->getYear() * 100;
+        // $month = $time->getMonth();
+        // $nik = $year + $month;
+        // $nik = $nik * 10000;
+        // $nik = $nik + $id;
 
-        $this->AccountModel->save([
-            'id_account' => $id,
-            'nik' => $nik
-        ]);
+        // $this->AccountModel->save([
+        //     'id_account' => $id,
+        //     'nik' => $nik
+        // ]);
 
         session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');
         return redirect()->to('/Admin');

@@ -83,18 +83,6 @@
                          </tr>
                          <?php endforeach; ?>
                     </tbody>
-                    <tfoot>
-                         <tr>
-                              <th class="text-nowrap">ID.</th>
-                              <th class="text-nowrap">Date</th>
-                              <th class="text-nowrap">Status</th>
-                              <th class="text-nowrap">Priority</th>
-                              <th class="text-nowrap">Category</th>
-                              <th class="text-nowrap">Title</th>
-                              <th class="text-nowrap">action</th>
-
-                         </tr>
-                    </tfoot>
                </table>
           </div>
      </div>
