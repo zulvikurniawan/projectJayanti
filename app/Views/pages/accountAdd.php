@@ -11,16 +11,34 @@
      <hr>
      <form action="/admin/save" method="post" name="myForm">
           <?= csrf_field(); ?>
-          <input type="hidden" id="subaction" name="subaction" value="">
+          <!-- <input type="hidden" id="subaction" name="subaction" value=""> -->
           <div class="row justify-content-center">
                <div class="col-5">
+                    <div class="mb-3">
+                         <label for="nik" class="form-label">NIK</label>
+                         <input type="text"
+                              class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : ''; ?>" id="nik"
+                              name="nik" placeholder="Input NIK" autofocus value="<?= old('nik'); ?>">
+                         <div class="invalid-feedback">
+                              <?= $validation->getError('nik'); ?>
+                         </div>
+                    </div>
                     <div class="mb-3">
                          <label for="nama" class="form-label">Nama</label>
                          <input type="text"
                               class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama"
-                              name="nama" placeholder="Input Nama" autofocus value="<?= old('nama'); ?>">
+                              name="nama" placeholder="Input Nama" value="<?= old('nama'); ?>">
                          <div class="invalid-feedback">
                               <?= $validation->getError('nama'); ?>
+                         </div>
+                    </div>
+                    <div class="mb-3">
+                         <label for="password" class="form-label">Password</label>
+                         <input type="text"
+                              class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password"
+                              name="password" placeholder="Input Password" value="<?= old('password'); ?>">
+                         <div class="invalid-feedback">
+                              <?= $validation->getError('password'); ?>
                          </div>
                     </div>
                     <div class="mb-3">

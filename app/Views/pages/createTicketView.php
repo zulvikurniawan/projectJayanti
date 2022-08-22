@@ -16,19 +16,18 @@
           <div class="row mb-2">
                <label for="type" class="col-sm-4 col-form-label">Type</label>
                <div class="col-3">
-                    <select class="form-select form-select-sm text-center" aria-label="Default select example" id="type"
-                         name="type">
+                    <select class="form-select form-select-sm text-center" aria-label="Default select example" id="type" name="type">
                          <option hidden selected>Select Type</option>
                          <option value="Request">Request</option>
-                         <option value="Incident">Incident</option>
+                         <option value="2">.</option>
+                         <option value="3">..</option>
                     </select>
                </div>
           </div>
           <div class="row mb-2">
                <label for="category" class="col-sm-4 col-form-label">Category</label>
                <div class="col-3">
-                    <select class="form-select form-select-sm text-center" aria-label="Default select example"
-                         id="category" name="category">
+                    <select class="form-select form-select-sm text-center" aria-label="Default select example" id="category" name="category">
                          <option hidden selected>Select Category</option>
                          <option value="Network Problem">Network Problem</option>
                          <option value="Hardware Problem">Hardware Problem</option>
@@ -45,8 +44,7 @@
           <div class="row mb-2">
                <label for="urgency" class="col-sm-4 col-form-label">Urgency</label>
                <div class="col-3">
-                    <input type="text" class="form-control form-control-sm" id="urgency" name="urgency" disabled
-                         value="">
+                    <input type="text" class="form-control form-control-sm" id="urgency" name="urgency" disabled value="">
                     <!-- <select class="form-select form-select-sm text-center" aria-label="Default select example" id="urgency" name="urgency" disabled>
                     <option hidden selected>Medium</option>
                     <option value="1">One</option>
@@ -58,8 +56,7 @@
           <div class="row mb-4">
                <label for="Priority" class="col-sm-4 col-form-label">Priority</label>
                <div class="col-3">
-                    <select class="form-select form-select-sm text-center" aria-label="Default select example"
-                         id="Priority" name="Priority">
+                    <select class="form-select form-select-sm text-center" aria-label="Default select example" id="Priority" name="Priority">
                          <option hidden selected>Select Priority</option>
                          <option value="low">Low</option>
                          <option value="medium">Medium</option>
@@ -99,12 +96,11 @@
           <div class="row mb-2">
                <label for="my_device" class="col-sm-4 col-form-label">My Devices</label>
                <div class="col-3">
-                    <select class="form-select form-select-sm text-center" aria-label="Default select example"
-                         id="my_device" name="my_device">
+                    <select class="form-select form-select-sm text-center" aria-label="Default select example" id="my_device" name="my_device">
                          <option hidden selected>Select Devices</option>
-                         <option value="Laptop">Laptop</option>
-                         <option value="Desktop">Desktop</option>
-                         <option value="Monitor">Monitor</option>
+                         <option value="monitor">Monitor</option>
+                         <option value="computer">Computer</option>
+                         <option value="laptop">Laptop</option>
                     </select>
                </div>
                <!-- <div class="col-1">
@@ -114,10 +110,11 @@
           <div class="row mb-4">
                <label for="location" class="col-sm-4 col-form-label">Location</label>
                <div class="col-3">
-                    <select class="form-select form-select-sm text-center" aria-label="Default select example"
-                         id="location" name="location">
+                    <select class="form-select form-select-sm text-center" aria-label="Default select example" id="location" name="location">
                          <option hidden selected>Select Location</option>
-                         <option value="Office">Office</option>
+                         <option value="1">Office</option>
+                         <option value="2">.</option>
+                         <option value="3">..</option>
                     </select>
                </div>
           </div>
@@ -133,7 +130,7 @@
                <div class="col-3">
                     <select class="form-select form-select-sm text-center" aria-label="Default select example">
                          <?php foreach ($head as $h) : ?>
-                         <option selected value="<?= $h['id_account']; ?>"><?= $h['nama']; ?></option>
+                              <option selected value="<?= $h['id_account']; ?>"><?= $h['nama']; ?></option>
                          <?php endforeach; ?>
                     </select>
                </div>
@@ -165,8 +162,7 @@
                <label for="Email" class="col-sm-4 col-form-label ">Description</label>
                <div class="col-5">
                     <div class="form-floating">
-                         <textarea class="form-control" placeholder="Leave a comment here" id="description"
-                              name="description" style="height: 300px"></textarea>
+                         <textarea class="form-control" placeholder="Leave a comment here" id="description" name="description" style="height: 300px"></textarea>
                     </div>
                </div>
           </div>

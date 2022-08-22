@@ -35,7 +35,7 @@
     <?= $this->renderSection('content'); ?>
 
 
-    <footer class="py-3 mt-3 text-center bg-info fixed-bottom">created with &#129505; by <a href="https://www.instagram.com/zka_17_/" class="text-dark fw-bold">Trestiani Jayanti</a>
+    <footer class="py-3 mt-3 text-center bg-info fixed-bottom"><strong>2018804265 - Trestiani J</strong></a>
     </footer>
 
 

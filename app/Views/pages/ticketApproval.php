@@ -93,26 +93,6 @@
                          </tr>
                          <?php endforeach; ?>
                     </tbody>
-                    <tfoot>
-                         <tr>
-                              <th class="text-nowrap">ID.</th>
-                              <th class="text-nowrap">Date</th>
-                              <th class="text-nowrap">Status</th>
-                              <th class="text-nowrap">Priority</th>
-                              <th class="text-nowrap">Category</th>
-                              <th class="text-nowrap">Title</th>
-                              <th class="text-nowrap text-center">action</th>
-                              <!-- <th>Opening Date</th>
-                        <th>Last Update</th>
-                        <th>Plugins-Info-Ext.</th>
-                        <th>Requester-Requester</th>
-                        <th>Assigned To - Technician</th>
-                        <th>Satisfaction Survey - Satisfaction</th>
-                        <th>Plugins Info - Ip Address</th>
-                        <th>Resolution Date</th>
-                        <th>Description</th> -->
-                         </tr>
-                    </tfoot>
                </table>
           </div>
      </div>
