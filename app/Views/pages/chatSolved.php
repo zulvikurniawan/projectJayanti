@@ -16,13 +16,25 @@
      <div class="row">
           <div class="col">
                <div class="row">
-               </div>
+                    <div class="col">
+                         <div class="row pe-3 mb-3">
+                              <div class="col border-bottom">
+                                   <label for="" class="fw-bold">Action Historical :</label>
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col overflow-auto" style="height: 15rem;">
+                                   <div class="chat">
 
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
                <div class="row mb-3">
                     <div class="col">
                          <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                   style="height: 80px"></textarea>
+                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
                               <label for="floatingTextarea2">Message</label>
                          </div>
                     </div>
@@ -38,8 +50,7 @@
                          <form action="/Ticket/send" method="post">
                               <input type="hidden" name="id_ticket" value="<?= $ticket['id_ticket']; ?>">
                               <button type="submit" class="btn btn-warning">Send<i class="bi bi-send ms-4"></i></button>
-                              <a class="btn btn-secondary" href="/Ticket/detailsolved/<?= $ticket['id_ticket']; ?>"
-                                   role="button">Back</a>
+                              <a class="btn btn-secondary" href="/Ticket/detailsolved/<?= $ticket['id_ticket']; ?>" role="button">Back</a>
                          </form>
                     </div>
                </div>
@@ -54,11 +65,11 @@
 <?= $this->section('javascript'); ?>
 
 <script>
-setInterval(displayHello, 1000);
+     setInterval(displayHello, 1000);
 
-function displayHello() {
-     document.getElementById("demo").innerHTML += "Hello";
-}
+     function displayHello() {
+          document.getElementById("demo").innerHTML += "Hello";
+     }
 </script>
 <?= $this->endSection(); ?>
 // akhir java skript
