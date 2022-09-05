@@ -9,6 +9,7 @@ class Ticket extends BaseController
 
     protected $TicketModel;
     protected $AccountModel;
+    protected $ChatModel;
 
     //ticket status start 
 
@@ -268,6 +269,16 @@ class Ticket extends BaseController
         ];
 
         return view('pages/chatSolved', $data);
+    }
+    public function chatFench($id)
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket',
+            'ticket' => $this->TicketModel->getTicket($id),
+            'chat' => $this->ChatModel->getChatTicket($id)
+        ];
+
+        return view('pages/chat', $data);
     }
 
     public function done()

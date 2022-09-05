@@ -34,7 +34,8 @@
                <div class="row mb-3">
                     <div class="col">
                          <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
+                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                   style="height: 80px"></textarea>
                               <label for="floatingTextarea2">Message</label>
                          </div>
                     </div>
@@ -50,7 +51,8 @@
                          <form action="/Ticket/send" method="post">
                               <input type="hidden" name="id_ticket" value="<?= $ticket['id_ticket']; ?>">
                               <button type="submit" class="btn btn-warning">Send<i class="bi bi-send ms-4"></i></button>
-                              <a class="btn btn-secondary" href="/Ticket/detailsolved/<?= $ticket['id_ticket']; ?>" role="button">Back</a>
+                              <a class="btn btn-secondary" href="/Ticket/detailsolved/<?= $ticket['id_ticket']; ?>"
+                                   role="button">Back</a>
                          </form>
                     </div>
                </div>
@@ -63,13 +65,15 @@
 
 //java skript
 <?= $this->section('javascript'); ?>
-
 <script>
-     setInterval(displayHello, 1000);
+function loadlink() {
+     $('.chat').load('../../Ticket/chatFench/<?= $ticket['id_ticket']; ?>')
+}
 
-     function displayHello() {
-          document.getElementById("demo").innerHTML += "Hello";
-     }
+loadlink(); // This will run on page load
+setInterval(function() {
+     loadlink() // this will run after every 5 seconds
+}, 5000);
 </script>
 <?= $this->endSection(); ?>
 // akhir java skript
