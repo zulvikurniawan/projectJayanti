@@ -10,7 +10,7 @@
           $jabatan = $user['id_jabatan'];
           $parent = $user['id_parent'];
           $allAccess  ?>
-          <?= ($jabatan == 1) ? $allAccess = true : $allAccess = false; ?>
+          <?php ($jabatan == 1) ? $allAccess = true : $allAccess = false; ?>
           <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">

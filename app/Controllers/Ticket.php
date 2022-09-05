@@ -82,10 +82,16 @@ class Ticket extends BaseController
     //ticket create start
 
     public function create()
-    {
+    {;
+        $id_atasan = session()->getFlashdata("_ci_old_input");
+        $emailHead = "";
+        if ($id_atasan != null) {
+            $emailHead = $this->AccountModel->getAdmin($id_atasan['post']['headFollup'])['email'];
+        }
         $data = [
             'title' => 'PT. PANARUB | Create Ticket',
-            'head' => $this->AccountModel->getAtasan(session()->get('user'))
+            'head' => $this->AccountModel->getAtasan(session()->get('user')),
+            'emailHead' => $emailHead
         ];
 
         return view('pages/createTicketView', $data);
@@ -93,6 +99,9 @@ class Ticket extends BaseController
 
     public function save()
     {
+        if ($this->request->getVar('subaction') == "headFollup") {
+            return redirect()->to("/Ticket/Create")->withInput();
+        }
         // dd($this->request->getVar());
         $this->TicketModel->save([
             'status' => 'new',
