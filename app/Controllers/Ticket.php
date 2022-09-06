@@ -117,7 +117,8 @@ class Ticket extends BaseController
             'title' => $this->request->getVar('title'),
             'description' => $this->request->getVar('description'),
             'ip' => $this->request->getVar('ip'),
-            'ext' => $this->request->getVar('ext')
+            'ext' => $this->request->getVar('ext'),
+            'id_account' => session()->get('user')['id_account']
         ]);
 
 
@@ -279,6 +280,22 @@ class Ticket extends BaseController
         ];
 
         return view('pages/chat', $data);
+    }
+    public function send()
+    {
+
+        $form = $this->request->getPost();
+        if ($form != null) {
+            $ticket =  $this->TicketModel->getTicket($form['id_ticket']);
+
+            $this->ChatModel->save([
+                'isi' => $form['chat2'],
+                'id_ticket' => $ticket['id_ticket'],
+                'pengirim_account_id' => session()->get('user')['id_account'],
+            ]);
+        }
+
+        return redirect()->to('/Ticket/chat/' . $form['id_ticket']);
     }
 
     public function done()

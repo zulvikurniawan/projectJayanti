@@ -2,11 +2,11 @@
 
 <?php
      if ($c['pengirim_account_id'] == session()->get('user')['id_account']) {
-          $bgchat = "cardPengirim";
-          $conten = "";
-     } else {
           $bgchat = "cardPenerima";
           $conten = "justify-content-end";
+     } else {
+          $bgchat = "cardPengirim";
+          $conten = "";
      }
      ?>
 

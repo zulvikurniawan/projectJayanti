@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ChatModel extends Model
 {
-     protected $table      = 'chat as c';
+     protected $table      = 'chat';
      protected $primaryKey = 'id_chat';
 
      protected $useAutoIncrement = true;
@@ -27,9 +27,8 @@ class ChatModel extends Model
           $chat = [];
           if ($id_ticket != null) {
                $chat = $this
-                    ->select("c.*, coalesce(a.nama,b.nama) as nama")
-                    ->join('account as a', 'a.id_account = c.pengirim_account_id')
-                    ->join('account as b', 'b.id_account = c.penerima_account_id')
+                    ->select("chat.*, a.nama as nama")
+                    ->join('account as a', 'a.id_account = chat.pengirim_account_id')
                     ->where(['id_ticket' => $id_ticket])
                     ->findAll();
           }
