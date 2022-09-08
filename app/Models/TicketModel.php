@@ -100,4 +100,15 @@ class TicketModel extends Model
             ->where($data)
             ->findAll();
     }
+
+    public function getEmail($id_ticket)
+    {
+        $email = $this
+            ->select('a.email as email')
+            ->join('account as a', 'a.id_account = ticket.id_account', 'left')
+            ->where(['id_ticket' => $id_ticket])
+            ->first();
+
+        return $email;
+    }
 }

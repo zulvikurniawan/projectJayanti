@@ -177,6 +177,15 @@ class Ticket extends BaseController
             'id_ticket' => $id,
             'status' => 'approve',
         ]);
+
+        $email = $this->TicketModel->getEmail($id);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Approve',
+            'pesan' => 'Tiket yang anda request telah di approve oleh head',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('tambahData', 'Data berhasil diapprove.');
         return redirect()->to('/Ticket/approval');
     }
@@ -187,6 +196,15 @@ class Ticket extends BaseController
             'id_ticket' => $id,
             'status' => 'rejected',
         ]);
+
+        $email = $this->TicketModel->getEmail($id);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Reject',
+            'pesan' => 'Tiket yang anda request telah di reject oleh head',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('tambahData', 'Data berhasil direject.');
         return redirect()->to('/Ticket/approval');
     }
@@ -221,11 +239,23 @@ class Ticket extends BaseController
 
     public function assignSave()
     {
+
+        $id =  $this->request->getPost('id');
+
         $this->TicketModel->save([
-            'id_ticket' =>  $this->request->getPost('id'),
+            'id_ticket' =>  $id,
             'status' => 'proses',
             'id_assign' => $this->request->getPost('user')
         ]);
+
+        $email = $this->TicketModel->getEmail($id);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Assign',
+            'pesan' => 'Tiket yang anda request telah di assign oleh admin',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('tambahData', 'Data berhasil diassign.');
         return redirect()->to('/Ticket/approval');
     }
@@ -306,10 +336,49 @@ class Ticket extends BaseController
             'id_ticket' => $form['id_ticket'],
             'status' => 'solved',
         ]);
+
+        $email = $this->TicketModel->getEmail($form['id_ticket']);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Solved',
+            'pesan' => 'Tiket yang anda request telah di solved oleh Teknisi',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('success', 'Data berhasil disolved.');
         return redirect()->to('/Ticket/solved');
     }
 
     //ticket solved end
 
+    public function email()
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket',
+        ];
+
+        return view('pages/email', $data);
+    }
+
+    public function emailSend($email)
+    {
+        $email_tujuan = $email['email'];
+        $subject = $email['subject'];
+        $pesan = $email['pesan'];
+
+        // dd($email_tujuan);
+        $email = service('email');
+        $email->setTo($email_tujuan);
+
+        $email->setSubject($subject);
+        $email->setMessage($pesan);
+
+        // dd($email);
+        if ($email->send()) {
+            session()->setFlashdata('success', 'Email berhasil dikirim.');
+        } else {
+            session()->setFlashdata('failed', 'Email gagal dikirim.');
+        }
+        return redirect()->to('/Ticket/email');
+    }
 }
