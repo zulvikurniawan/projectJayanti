@@ -9,6 +9,7 @@ class Ticket extends BaseController
 
     protected $TicketModel;
     protected $AccountModel;
+    protected $ChatModel;
 
     //ticket status start 
 
@@ -82,10 +83,16 @@ class Ticket extends BaseController
     //ticket create start
 
     public function create()
-    {
+    {;
+        $id_atasan = session()->getFlashdata("_ci_old_input");
+        $emailHead = "";
+        if ($id_atasan != null) {
+            $emailHead = $this->AccountModel->getAdmin($id_atasan['post']['headFollup'])['email'];
+        }
         $data = [
             'title' => 'PT. PANARUB | Create Ticket',
-            'head' => $this->AccountModel->getAtasan(session()->get('user'))
+            'head' => $this->AccountModel->getAtasan(session()->get('user')),
+            'emailHead' => $emailHead
         ];
 
         return view('pages/createTicketView', $data);
@@ -93,6 +100,9 @@ class Ticket extends BaseController
 
     public function save()
     {
+        if ($this->request->getVar('subaction') == "headFollup") {
+            return redirect()->to("/Ticket/Create")->withInput();
+        }
         // dd($this->request->getVar());
         $this->TicketModel->save([
             'status' => 'new',
@@ -107,7 +117,8 @@ class Ticket extends BaseController
             'title' => $this->request->getVar('title'),
             'description' => $this->request->getVar('description'),
             'ip' => $this->request->getVar('ip'),
-            'ext' => $this->request->getVar('ext')
+            'ext' => $this->request->getVar('ext'),
+            'id_account' => session()->get('user')['id_account']
         ]);
 
 
@@ -166,6 +177,15 @@ class Ticket extends BaseController
             'id_ticket' => $id,
             'status' => 'approve',
         ]);
+
+        $email = $this->TicketModel->getEmail($id);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Approve',
+            'pesan' => 'Tiket yang anda request telah di approve oleh head',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('tambahData', 'Data berhasil diapprove.');
         return redirect()->to('/Ticket/approval');
     }
@@ -176,6 +196,15 @@ class Ticket extends BaseController
             'id_ticket' => $id,
             'status' => 'rejected',
         ]);
+
+        $email = $this->TicketModel->getEmail($id);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Reject',
+            'pesan' => 'Tiket yang anda request telah di reject oleh head',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('tambahData', 'Data berhasil direject.');
         return redirect()->to('/Ticket/approval');
     }
@@ -210,11 +239,23 @@ class Ticket extends BaseController
 
     public function assignSave()
     {
+
+        $id =  $this->request->getPost('id');
+
         $this->TicketModel->save([
-            'id_ticket' =>  $this->request->getPost('id'),
+            'id_ticket' =>  $id,
             'status' => 'proses',
             'id_assign' => $this->request->getPost('user')
         ]);
+
+        $email = $this->TicketModel->getEmail($id);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Assign',
+            'pesan' => 'Tiket yang anda request telah di assign oleh admin',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('tambahData', 'Data berhasil diassign.');
         return redirect()->to('/Ticket/approval');
     }
@@ -260,6 +301,32 @@ class Ticket extends BaseController
 
         return view('pages/chatSolved', $data);
     }
+    public function chatFench($id)
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket',
+            'ticket' => $this->TicketModel->getTicket($id),
+            'chat' => $this->ChatModel->getChatTicket($id)
+        ];
+
+        return view('pages/chat', $data);
+    }
+    public function send()
+    {
+
+        $form = $this->request->getPost();
+        if ($form != null) {
+            $ticket =  $this->TicketModel->getTicket($form['id_ticket']);
+
+            $this->ChatModel->save([
+                'isi' => $form['chat2'],
+                'id_ticket' => $ticket['id_ticket'],
+                'pengirim_account_id' => session()->get('user')['id_account'],
+            ]);
+        }
+
+        return redirect()->to('/Ticket/chat/' . $form['id_ticket']);
+    }
 
     public function done()
     {
@@ -269,10 +336,49 @@ class Ticket extends BaseController
             'id_ticket' => $form['id_ticket'],
             'status' => 'solved',
         ]);
+
+        $email = $this->TicketModel->getEmail($form['id_ticket']);
+        $emailData = [
+            'email' => $email,
+            'subject' => 'Ticket Solved',
+            'pesan' => 'Tiket yang anda request telah di solved oleh Teknisi',
+        ];
+        $this->emailSend($emailData);
+
         session()->setFlashdata('success', 'Data berhasil disolved.');
         return redirect()->to('/Ticket/solved');
     }
 
     //ticket solved end
 
+    public function email()
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Ticket',
+        ];
+
+        return view('pages/email', $data);
+    }
+
+    public function emailSend($email)
+    {
+        $email_tujuan = $email['email'];
+        $subject = $email['subject'];
+        $pesan = $email['pesan'];
+
+        // dd($email_tujuan);
+        $email = service('email');
+        $email->setTo($email_tujuan);
+
+        $email->setSubject($subject);
+        $email->setMessage($pesan);
+
+        // dd($email);
+        if ($email->send()) {
+            session()->setFlashdata('success', 'Email berhasil dikirim.');
+        } else {
+            session()->setFlashdata('failed', 'Email gagal dikirim.');
+        }
+        return redirect()->to('/Ticket/email');
+    }
 }

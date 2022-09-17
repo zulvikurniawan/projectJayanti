@@ -14,7 +14,11 @@ class TicketModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
+<<<<<<< HEAD
     protected $allowedFields = ['type', 'category', 'priority', 'email_followup', 'my_device', 'location', 'email_watcher', 'title', 'description', 'ip', 'ext', 'status', 'id_account', 'id_assign'];
+=======
+    protected $allowedFields = ['type', 'category', 'urgency', 'email_followup', 'my_device', 'location', 'email_watcher', 'title', 'description', 'ip', 'ext', 'status', 'id_account', 'id_assign'];
+>>>>>>> zulvi
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -99,5 +103,16 @@ class TicketModel extends Model
             ->join('account as aa', 'aa.id_account = ticket.id_assign', 'left')
             ->where($data)
             ->findAll();
+    }
+
+    public function getEmail($id_ticket)
+    {
+        $email = $this
+            ->select('a.email as email')
+            ->join('account as a', 'a.id_account = ticket.id_account', 'left')
+            ->where(['id_ticket' => $id_ticket])
+            ->first();
+
+        return $email;
     }
 }

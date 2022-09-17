@@ -11,6 +11,7 @@ use Psr\Log\LoggerInterface;
 
 //jika memakai BaseController namespase berada di sini
 use \App\Models\AccountModel;
+use App\Models\ChatModel;
 use \App\Models\TicketModel;
 use \App\Models\JabatanModel;
 
@@ -57,5 +58,6 @@ class BaseController extends Controller
         $this->AccountModel = new AccountModel();
         $this->TicketModel = new TicketModel();
         $this->JabatanModel = new JabatanModel();
+        $this->ChatModel = new ChatModel();
     }
 }
