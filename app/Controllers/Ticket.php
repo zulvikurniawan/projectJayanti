@@ -25,6 +25,42 @@ class Ticket extends BaseController
         return view('pages/ticketView', $data);
     }
 
+<<<<<<< HEAD
+=======
+    public function create()
+    {
+        $data = [
+            'title' => 'PT. PANARUB | Create Ticket'
+        ];
+
+        return view('pages/createTicketView', $data);
+    }
+
+    public function save()
+    {
+        $this->TicketModel->save([
+            'status' => 'new',
+            'type' => $this->request->getVar('type'),
+            'category' => $this->request->getVar('category'),
+            'priority' => $this->request->getVar('priority'),
+            'urgency' => $this->request->getVar('urgency'),
+            'email_followup' => $this->request->getVar('tempat_lahir'),
+            'my_device' => $this->request->getVar('my_device'),
+            'location' => $this->request->getVar('location'),
+            'email_watcher' => $this->request->getVar('email_watcher'),
+            'title' => $this->request->getVar('title'),
+            'description' => $this->request->getVar('description'),
+            'ip' => $this->request->getVar('ip'),
+            'ext' => $this->request->getVar('ext')
+        ]);
+
+
+
+        session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');
+        return redirect()->to('/Ticket/list');
+    }
+
+>>>>>>> parent of 9dea872 (memperbaiki create ticket)
     public function list($status)
     {
         $form = $this->request->getPost();

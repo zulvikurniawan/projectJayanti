@@ -14,7 +14,11 @@ class TicketModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
+<<<<<<< HEAD
     protected $allowedFields = ['type', 'category', 'priority', 'email_followup', 'my_device', 'location', 'email_watcher', 'title', 'description', 'ip', 'ext', 'status', 'id_account', 'id_assign'];
+=======
+    protected $allowedFields = ['type', 'category', 'priority', 'urgency', 'email_followup', 'my_device', 'location', 'email_watcher', 'title', 'description', 'ip', 'ext', 'status', 'id_account', 'id_assign'];
+>>>>>>> parent of 9dea872 (memperbaiki create ticket)
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
