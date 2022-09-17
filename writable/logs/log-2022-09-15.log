@@ -1,0 +1,16 @@
+ERROR - 2022-09-15 13:33:32 --> Table 'gumor_2022.account' doesn't exist
+CRITICAL - 2022-09-15 13:33:32 --> Table 'gumor_2022.account' doesn't exist
+#0 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `account...', 0)
+#1 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `account...')
+#2 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `account...')
+#3 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `account...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Models\AccountModel.php(46): CodeIgniter\BaseModel->first()
+#7 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\app\Controllers\Login.php(25): App\Models\AccountModel->getUsername('9876543210')
+#8 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Login->proses()
+#9 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\XIANGLU\Desktop\JAYANTI\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#13 {main}
