@@ -144,8 +144,7 @@ class Admin extends BaseController
             'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
             'email' => $this->request->getVar('email'),
             'nomor_hp' => $this->request->getVar('nomor_hp'),
-            'tanggal_bergabung' => $this->request->getVar('tanggal_bergabung'),
-            'foto_profil' => 'fotoProfil.jpg'
+            'tanggal_bergabung' => $this->request->getVar('tanggal_bergabung')
         ]);
 
         $id = $this->AccountModel->getInsertID();
@@ -215,7 +214,6 @@ class Admin extends BaseController
             'email' => $this->request->getVar('email'),
             'nomor_hp' => $this->request->getVar('nomor_hp'),
             'tanggal_bergabung' => $this->request->getVar('tanggal_bergabung'),
-            'foto_profil' => $this->request->getVar('foto_profil')
         ]);
 
         session()->setFlashdata('tambahData', 'Data berhasil ubah.');

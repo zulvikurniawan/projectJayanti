@@ -14,7 +14,11 @@ class TicketModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
+<<<<<<< HEAD
     protected $allowedFields = ['type', 'category', 'priority', 'email_followup', 'my_device', 'location', 'email_watcher', 'title', 'description', 'ip', 'ext', 'status', 'id_account', 'id_assign'];
+=======
+    protected $allowedFields = ['type', 'category', 'urgency', 'email_followup', 'my_device', 'location', 'email_watcher', 'title', 'description', 'ip', 'ext', 'status', 'id_account', 'id_assign'];
+>>>>>>> zulvi
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
