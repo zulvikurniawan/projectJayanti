@@ -12,10 +12,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="row g-0">
-                    <div class="col-md-4 my-auto">
-                        <img src="/img/<?= $admin['foto_profil']; ?>" class="img-fluid rounded-start" alt="fotoProfil">
-                    </div>
+                <div class="row g-0 justify-content-center">
                     <div class="col-md-8">
                         <div class="card-body">
                             <table class="table">
@@ -80,11 +77,10 @@
                                     <td><?= $admin['tanggal_bergabung']; ?></td>
                                 </tr>
                             </table>
-                            <a href="/Admin" class="btn btn-secondary">Back</a>
-                            <a href="#" class="btn btn-primary">Edit</a>
                         </div>
                     </div>
                 </div>
+                <div class="col text-end me-5"><a href="/Admin" class="btn btn-secondary">Back</a></div>
             </div>
         </div>
     </div>

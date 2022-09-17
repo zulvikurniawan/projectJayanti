@@ -42,6 +42,9 @@ $routes->get('/Admin/delete/(:num)', 'Admin::delete/$1');
 $routes->get('/Admin/(:num)', 'Admin::detail/$1');
 
 
+$routes->get('/Profile/(:num)', 'Profile::/$1');
+
+
 
 /*
  * --------------------------------------------------------------------
