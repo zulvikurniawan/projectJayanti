@@ -31,15 +31,9 @@
           </div>
      </div>
      <div class="row mb-2">
-          <label for="uergency" class="col-sm-4 col-form-label">Urgency</label>
+          <label for="uergency" class="col-sm-4 col-form-label">Urgentcy</label>
           <div class="col">
-               <label for="uergency" class="col-sm-4 col-form-label"><?= $ticket['urgency']; ?></label>
-          </div>
-     </div>
-     <div class="row mb-4">
-          <label for="priority" class="col-sm-4 col-form-label">Priority</label>
-          <div class="col">
-               <label for="priority" class="col-sm-4 col-form-label"><?= $ticket['priority']; ?></label>
+               <label for="uergency" class="col-sm-4 col-form-label"><?= $ticket['urgentcy']; ?></label>
           </div>
      </div>
      <hr>

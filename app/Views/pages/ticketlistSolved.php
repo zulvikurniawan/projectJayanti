@@ -48,7 +48,7 @@
                               <th class="text-nowrap">ID.</th>
                               <th class="text-nowrap">Date</th>
                               <th class="text-nowrap">Status</th>
-                              <th class="text-nowrap">Priority</th>
+                              <th class="text-nowrap">Urgentcy</th>
                               <th class="text-nowrap">Category</th>
                               <th class="text-nowrap">Title</th>
                               <th class="text-nowrap">action</th>
@@ -60,7 +60,7 @@
                               <td><?= $t['id_ticket']; ?></td>
                               <td><?= $t['created_at']; ?></td>
                               <td><?= $t['status']; ?></td>
-                              <td><?= $t['priority']; ?></td>
+                              <td><?= $t['urgentcy']; ?></td>
                               <td><?= $t['category']; ?></td>
                               <td><?= $t['title']; ?></td>
                               <td><a href="/ticket/detailsolved/<?= $t['id_ticket']; ?>"

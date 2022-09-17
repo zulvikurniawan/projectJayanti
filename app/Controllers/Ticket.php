@@ -94,6 +94,7 @@ class Ticket extends BaseController
             'head' => $this->AccountModel->getAtasan(session()->get('user')),
             'emailHead' => $emailHead
         ];
+        // dd($data['head']);
 
         return view('pages/createTicketView', $data);
     }
@@ -108,7 +109,7 @@ class Ticket extends BaseController
             'status' => 'new',
             'type' => $this->request->getVar('type'),
             'category' => $this->request->getVar('category'),
-            'priority' => $this->request->getVar('priority'),
+            'urgentcy' => $this->request->getVar('urgentcy'),
             'email_followup' => $this->request->getVar('tempat_lahir'),
             'my_device' => $this->request->getVar('my_device'),
             'location' => $this->request->getVar('location'),
@@ -297,6 +298,7 @@ class Ticket extends BaseController
             'title' => 'PT. PANARUB | Ticket',
             'ticket' => $this->TicketModel->getTicket($id),
         ];
+        // dd($data['ticket']);
 
         return view('pages/chatSolved', $data);
     }

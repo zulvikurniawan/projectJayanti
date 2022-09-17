@@ -2,8 +2,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-info shadow">
      <div class="container-fluid mx-5">
-          <a class="navbar-brand fw-bold" href="/home"><img src="/img/logoPanarub.jpg" class="img-thumbnail rounded me-3" alt="logoPanarub" style="width: 40px;">PT PANARUB INDUSTRI</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand fw-bold" href="/home"><img src="/img/logoPanarub.jpg"
+                    class="img-thumbnail rounded me-3" alt="logoPanarub" style="width: 40px;">PT PANARUB INDUSTRI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
           </button>
           <?php $user = session()->get('user');
@@ -34,6 +36,8 @@
                     <li class="nav-item">
                          <a class="nav-link" href="/Ticket/assign">Assign Ticket</a>
                     </li>
+                    <?php endif; ?>
+                    <?php if ($allAccess || $jabatan == 7) : ?>
                     <li class="nav-item">
                          <a class="nav-link" href="/Ticket/solved">Solved Ticket</a>
                     </li>
@@ -46,7 +50,7 @@
                     </li>
                     <?php endif; ?>
 
-                    <?php if ($allAccess) : ?>
+                    <?php if ($allAccess || $jabatan == 6) : ?>
 
                     <li class="nav-item">
                          <a class="nav-link" href="/Admin">Admin</a>
@@ -54,7 +58,8 @@
                     <?php endif; ?>
 
                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
                               <i class="bi bi-person-circle"></i>
                          </a>
                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">

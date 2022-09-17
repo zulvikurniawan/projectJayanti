@@ -7,7 +7,7 @@
                <i class="bi bi-card-list"></i>
           </div>
           <div class="col-10 text-center fw-bold"><i class="bi bi-circle-fill"></i>
-               Install ulang corel draw x6 (IT Group > PRB )
+               <?= $ticket['title']; ?>
           </div>
           <div class="col-1">1/1</div>
      </div>

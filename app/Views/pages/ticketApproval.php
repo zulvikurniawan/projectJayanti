@@ -12,13 +12,13 @@
      <form action="" method="">
           <div class="row mb-2">
                <div class="col-2">
-                    <h5 class="mb-3">Priority</h5>
+                    <h5 class="mb-3">Urgentcy</h5>
                     <h5 class=>Category</h5>
                </div>
                <div class="col-3">
                     <select class="form-select form-select-sm text-center mb-2" aria-label="Default select example"
-                         id="Priority" name="Priority">
-                         <option hidden selected>Select Priority</option>
+                         id="urgentcy" name="urgentcy">
+                         <option hidden selected>Select Urgentcy</option>
                          <option value="low">Low</option>
                          <option value="medium">Medium</option>
                          <option value="high">High</option>
@@ -47,7 +47,7 @@
                               <th class="text-nowrap">ID.</th>
                               <th class="text-nowrap">Date</th>
                               <th class="text-nowrap">Status</th>
-                              <th class="text-nowrap">Priority</th>
+                              <th class="text-nowrap">Urgentcy</th>
                               <th class="text-nowrap">Category</th>
                               <th class="text-nowrap">Title</th>
                               <th class="text-nowrap text-center">action</th>
@@ -70,7 +70,7 @@
                               <td><?= $t['id_ticket']; ?></td>
                               <td><?= $t['created_at']; ?></td>
                               <td><?= $t['status']; ?></td>
-                              <td><?= $t['priority']; ?></td>
+                              <td><?= $t['urgentcy']; ?></td>
                               <td><?= $t['category']; ?></td>
                               <td><?= $t['title']; ?></td>
                               <td class="text-center">

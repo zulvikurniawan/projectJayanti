@@ -24,11 +24,11 @@
      <form action="/Ticket/Status/<?= $status; ?>" method="post">
           <div class="row mb-2">
                <div class="col-2">
-                    <h5 class="mb-3">Priority</h5>
+                    <h5 class="mb-3">Urgentcy</h5>
                     <h5 class=>Category</h5>
                </div>
                <div class="col-3">
-                    <select class="form-select form-select-sm mb-2" aria-label="Default select example" name="priority">
+                    <select class="form-select form-select-sm mb-2" aria-label="Default select example" name="urgentcy">
                          <option selected value="">Open this select menu</option>
                          <option value="Low">Low</option>
                          <option value="Medium">Medium</option>
@@ -57,7 +57,7 @@
                               <th class="text-nowrap">ID.</th>
                               <th class="text-nowrap">Date</th>
                               <th class="text-nowrap">Status</th>
-                              <th class="text-nowrap">Priority</th>
+                              <th class="text-nowrap">Urgentcy</th>
                               <th class="text-nowrap">Category</th>
                               <th class="text-nowrap">Title</th>
                               <th class="text-nowrap">action</th>
@@ -69,7 +69,7 @@
                               <td><?= $t['id_ticket']; ?></td>
                               <td><?= $t['created_at']; ?></td>
                               <td><?= $t['status']; ?></td>
-                              <td><?= $t['priority']; ?></td>
+                              <td><?= $t['urgentcy']; ?></td>
                               <td><?= $t['category']; ?></td>
                               <td><?= $t['title']; ?></td>
                               <td><a href="/ticket/detail/<?= $t['id_ticket']; ?>"
